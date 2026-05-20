@@ -3,6 +3,8 @@ import pylab as pl
 
 from scipy.optimize import minimize
 
+#Please change the directory 
+
 directory = "C:/Users/joyli//OneDrive/Desktop/FYP/Coding and Data/"
 directory_main = "C:/Users/joyli//OneDrive/Desktop/FYP/"
 
@@ -173,20 +175,16 @@ import numpy as np
 
 from sklearn.decomposition import PCA
 
-#to change 
-
-loc_data = pd.read_csv(directory_main + "/data/fyp_location.csv", encoding = "latin1")
+loc_data = pd.read_csv(directory_main + "/data/fyp_location.csv", encoding = "latin1") #all location name, lat and lon is stored in "fyp_location.csv"
 lat_val = loc_data["Lat"]
 lon_val = loc_data["Lon"]
 text_val = loc_data["Project Name"]
 
-#To edit
 
-#locations = [[-26.5500,151.3300]]
-#numLocs = len(locations)
-numLocs = 10
+numLocs = 10  #manually input 10 as not all data has been downloaded
 state = "VIC data/"
 
+#Uncomment this for a variable energy requirement profile 
 """
 requiredMWh = []
 
@@ -200,7 +198,7 @@ for day in range(365):
             requiredMWh.append(100)
         else:
             requiredMWh.append(0)
-# Now rotate so the array *starts* at 11 AM
+#data *starts* at 11 AM
 requiredMWh = requiredMWh[11:] + requiredMWh[:11]
 requiredMWh = np.array(requiredMWh)
 """
@@ -252,7 +250,7 @@ if(True):
         lcoe = annualized_cost/np.sum(requiredMWh)
 
         deficit = CalculatePowerDeficit(solarCFs_loop, windCFs_loop, requiredMWh, solarMWs, windMWs, batteryMW)
-        #np.savetxt(directory_main + "Results/" + text_val[] + "_deficit_2019.csv",deficit, delimiter = ',')
+        np.savetxt(directory_main + "Results/" + text_val[loc] + "_deficit_2019.csv",deficit, delimiter = ',')  #saves the initial year deficit result in the Results folder
 
         plant_cost = PlantAnnualizedCostFunction(solarMWs, windMWs, batteryMW)
         penalty_cost = np.sum(deficit) * 20000
@@ -266,6 +264,7 @@ if(True):
         print( res["message"] )
         print( f"LCOE estimate: ${lcoe:,.2f}")
 
+        #below is for trouble shooting 
         """
         # Print the first 24 hours of demand and solar CF to verify alignment
         print("Hour | Demand | Solar CF")
@@ -298,7 +297,7 @@ if(True):
   
 
         #code to run the data through 2020-2024
-        data_years = [2021,2022,2023,2024] 
+        data_years = [2020,2021,2022,2023,2024] 
         deficit_future = []  
 
         solarCF_future = []  #adds empty array to solarCFs
@@ -345,7 +344,7 @@ if(True):
             j=j+1
 
         deficit_future = np.transpose(deficit_future)
-        np.savetxt("C:/Users/joyli//OneDrive/Desktop/FYP/Results/deficit_" + text_val[loc] + ".csv",deficit_future, delimiter = ',')
+        np.savetxt(directory_main + "Results/deficit_" + text_val[loc] + ".csv",deficit_future, delimiter = ',') #saves the all 5 future year results in Results folder for each location
 
 else:
     # dummy data for testing
