@@ -61,7 +61,7 @@ def CalculatePowerDeficit(solarCFs, windCFs, requiredMWh, solarMW, windMW, batte
     batteryStorage[0] = batteryMWh / 2    #This is assuming starting the battery at half full
     
     powerDeficitMWh = np.zeros(hours)   #stores the demand value as an array
-    
+    deficit_count = 0
     
     for i in range(hours):
         prev_level = batteryStorage[i-1] if i>0 else batteryStorage[0]
@@ -92,8 +92,10 @@ def CalculatePowerDeficit(solarCFs, windCFs, requiredMWh, solarMW, windMW, batte
             
             powerDeficitMWh[i] = np.maximum(requiredMWh[i] - totalMWh[i] - discharge,0.0)  #to calculate deficit if there is any (0 or deficit)
             batteryStorage[i] = prev_level - discharge      #avaliable energy level in battery after discharging it
+            if powerDeficitMWh[i] > 0: 
+                deficit_count=deficit_count+1
     
-    return powerDeficitMWh   #this gives a final deficit of each hour in an array
+    return powerDeficitMWh, deficit_count   #this gives a final deficit of each hour in an array
 
 
 def run_single_optimization(solarCFs, windCFs, requiredMWh):
@@ -122,7 +124,7 @@ def run_single_optimization(solarCFs, windCFs, requiredMWh):
         
         batteryMW = params[batteryIndx]   #Just 1 value of the battery energy
         
-        deficit = CalculatePowerDeficit(solarCFs, windCFs, requiredMWh, solarMWs, windMWs, batteryMW)  #use defined function to calculate the deficit array
+        deficit = CalculatePowerDeficit(solarCFs, windCFs, requiredMWh, solarMWs, windMWs, batteryMW)[0]  #use defined function to calculate the deficit array
 
         cost = PlantAnnualizedCostFunction(solarMWs, windMWs, batteryMW) + np.sum(deficit) * deficitPenalty #the annualized cost + penalty
         return cost
@@ -181,7 +183,7 @@ lon_val = loc_data["Lon"]
 text_val = loc_data["Project Name"]
 
 
-numLocs = 10  #manually input 10 as not all data has been downloaded
+numLocs = 2  #manually input 10 as not all data has been downloaded
 state = "VIC data/"
 
 #Uncomment this for a variable energy requirement profile 
@@ -249,12 +251,13 @@ if(True):
         annualized_cost = res["anualizedCost"]
         lcoe = annualized_cost/np.sum(requiredMWh)
 
-        deficit = CalculatePowerDeficit(solarCFs_loop, windCFs_loop, requiredMWh, solarMWs, windMWs, batteryMW)
+        deficit,d_count = CalculatePowerDeficit(solarCFs_loop, windCFs_loop, requiredMWh, solarMWs, windMWs, batteryMW)
         np.savetxt(directory_main + "Results/" + text_val[loc] + "_deficit_2019.csv",deficit, delimiter = ',')  #saves the initial year deficit result in the Results folder
 
         plant_cost = PlantAnnualizedCostFunction(solarMWs, windMWs, batteryMW)
         penalty_cost = np.sum(deficit) * 20000
         
+        print("\n\n")
         print(text_val[loc])
         print(f"solar MW: {solarMWs[0]:,.2f}")
         print(f"wind MW: {windMWs[0]:,.2f}")
@@ -263,6 +266,7 @@ if(True):
         print( res["success"] )
         print( res["message"] )
         print( f"LCOE estimate: ${lcoe:,.2f}")
+        print(f"The deficit count:{d_count}")
 
         #below is for trouble shooting 
         """
@@ -286,9 +290,7 @@ if(True):
         print(f"Wind annualized: ${af25 * wind_capex:,.0f}")
         print(f"Battery annualized: ${af10 * batt_capex:,.0f}")
         """
-
-        print("\n\n\n")
-
+        
         pl.plot(deficit)
         pl.title("Hours in the year vs Energy Deficit (2019)" + text_val[loc])
         pl.xlabel("Hours in the year (h)")
@@ -334,17 +336,19 @@ if(True):
             solarCF_floop = solarCF_future[[j],:]
             windCF_floop = windCF_future[[j],:]
             #print(windCF_floop.shape)
-            deficit_future1 = CalculatePowerDeficit(solarCF_floop, windCF_floop, requiredMWh, solarMWs, windMWs, batteryMW)
+            deficit_future1,d_count = CalculatePowerDeficit(solarCF_floop, windCF_floop, requiredMWh, solarMWs, windMWs, batteryMW)
             pl.plot(deficit_future1)
             pl.xlabel("Hours in the year (h)")
             pl.ylabel("Power Generation Deficit (MWh)")
             pl.title(str(i))
             pl.show()
             deficit_future.append(deficit_future1)
+            print("deficit count in year: " + str(i) + " is:" + str(d_count))
             j=j+1
 
         deficit_future = np.transpose(deficit_future)
         np.savetxt(directory_main + "Results/deficit_" + text_val[loc] + ".csv",deficit_future, delimiter = ',') #saves the all 5 future year results in Results folder for each location
+    
 
 else:
     # dummy data for testing
