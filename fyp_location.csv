@@ -2,21 +2,21 @@ Project Name,Lat,Lon
 Gippsland offshore wind,-38.4635,147.2854
 Hazelwood North Solar Farm,-38.2218,146.4749
 Glenrowan solar farm,-36.4735,146.1764
-Hawkesdale wind farm,-38.1480,142.3608
+Hawkesdale wind farm,-38.148,142.3608
 Mortlake Energy Hub,-38.0475,142.7604
-Golden Plains Wind Farm,-37.9167,143.7540
+Golden Plains Wind Farm,-37.9167,143.754
 Elaine Solar Farm,-37.7388,143.9879
 Warracknabeal Energy Park (proposed),-36.1939,142.3563
 Murra Warra Solar Farm (proposed),-36.4443,142.3389
-Gannawarra Solar Farm,-35.7351,143.7800
+Gannawarra Solar Farm,-35.7351,143.78
 Meering West Wind Farm,-35.8712,143.7132
-Coopers Gap ,-26.723725,151.469918
-Dulacca Wind Farm,-26.6540,149.8483
+Coopers Gap ,-26.7237,151.4699
+Dulacca Wind Farm,-26.654,149.8483
 Mount Emerald Wind Farm,-17.1323,145.3799
 Kaban,-17.5605,145.4133
 Sample data,-24.0842,150.8041
 Kennedy Energy Park Stage 1,-20.8752,144.4212
-Western Downs Green Power Hub,-26.9549,150.6760
+Western Downs Green Power Hub,-26.9549,150.676
 Daydream Solar Farm,-20.4934,147.7705
 Kidston Solar Project KS1,-18.8896,144.1428
 Emerald Solar Farm,-23.5091,148.1299
@@ -35,10 +35,10 @@ Weasel Solar Farm ,-42.2935,146.9851
 Bell Bay Solar Farm,-41.1123,146.8407
 King Island Solar Farm  ,-39.9411,143.8924
 Woakwine Wind farm,-37.3843,140.0686
-Robertstown Solar Project,-33.9839,139.0590
+Robertstown Solar Project,-33.9839,139.059
 Goyder South Hybrid Renewable Power Station,-33.6821,138.9333
 Cleve Wind Farm,-33.6186,136.3646
-Yadnarie Renewable Energy Facility,-33.6950,136.3856
+Yadnarie Renewable Energy Facility,-33.695,136.3856
 Yoorndoo Ilga Solar,-32.9203,137.5927
 Lincoln Gap Wind Farm,-32.5603,137.5554
 Bodangora Wind Farm ,-32.4053,149.0407
@@ -47,7 +47,7 @@ Sapphire Wind Farm,-29.6976,151.4099
 Metz Solar Farm ,-30.5174,151.8543
 Bullawah Wind Farm,-34.8518,145.1798
 Sunraysia Solar Farm,-34.8071,143.4897
-Hunter Coast Offshore Wind Project (proposed) ,-33.0000,152.0000
+Hunter Coast Offshore Wind Project (proposed) ,-33,152
 Muswellbrook Solar Farm ,-32.2634,150.9437
-Wollongong Offshore Wind Project (proposed),-34.5000,151.2000
-Shoalhaven Solar Farm ,-34.9370,150.5894
+Wollongong Offshore Wind Project (proposed),-34.5,151.2
+Shoalhaven Solar Farm ,-34.937,150.5894
