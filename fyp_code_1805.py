@@ -177,17 +177,18 @@ import numpy as np
 
 from sklearn.decomposition import PCA
 
-loc_data = pd.read_csv(directory_main + "/data/fyp_location.csv", encoding = "latin1") #all location name, lat and lon is stored in "fyp_location.csv"
+loc_data = pd.read_csv(directory_main + "/data/fyp_location.csv", encoding = "latin1", dtype={"Lat":str, "Lon":str}) #all location name, lat and lon is stored in "fyp_location.csv"
 lat_val = loc_data["Lat"]
 lon_val = loc_data["Lon"]
 text_val = loc_data["Project Name"]
+state_val = loc_data["State"]
 
-
-numLocs = 2  #manually input 10 as not all data has been downloaded
-state = "VIC data/"
+numLocs = len(lat_val)
+#numLocs = 3  #manually input 10 as not all data has been downloaded
+#state = "VIC data/"
 
 #Uncomment this for a variable energy requirement profile 
-"""
+
 requiredMWh = []
 
 # 24 hours per day, 365 days per year
@@ -203,7 +204,7 @@ for day in range(365):
 #data *starts* at 11 AM
 requiredMWh = requiredMWh[11:] + requiredMWh[:11]
 requiredMWh = np.array(requiredMWh)
-"""
+
 if(True):
     
     solarCFs = []    #adds empty array to solarCFs
@@ -211,8 +212,8 @@ if(True):
     
     for loc in range(numLocs):  #opens each location's file
 
-        filename_solar = directory_main + state + "2019_pv_" + str(lat_val[loc]) + "_" + str(lon_val[loc]) + ".csv"
-        filename_wind = directory_main + state + "2019_wind_" + str(lat_val[loc]) + "_" + str(lon_val[loc]) + ".csv"
+        filename_solar = directory_main + str(state_val[loc]) + " data/2019_pv_" + str(lat_val[loc]) + "_" + str(lon_val[loc]) + ".csv"
+        filename_wind = directory_main + str(state_val[loc]) + " data/2019_wind_" + str(lat_val[loc]) + "_" + str(lon_val[loc]) + ".csv"
    
         solarDataraw = pd.read_csv(str(filename_solar),skiprows=3)
         solarData = solarDataraw.to_xarray()
@@ -234,8 +235,10 @@ if(True):
     #print(solarCFs.shape)     #prints out the shape of the array
     #print(windCFs.shape)
     
-    requiredMWh = 100*np.ones_like(solarCFs[0,:])
+    #requiredMWh = 100*np.ones_like(solarCFs[0,:])
     print(requiredMWh.size)
+
+    model_result = []
     
     for loc in range(numLocs):
         
@@ -252,10 +255,16 @@ if(True):
         lcoe = annualized_cost/np.sum(requiredMWh)
 
         deficit,d_count = CalculatePowerDeficit(solarCFs_loop, windCFs_loop, requiredMWh, solarMWs, windMWs, batteryMW)
-        np.savetxt(directory_main + "Results/" + text_val[loc] + "_deficit_2019.csv",deficit, delimiter = ',')  #saves the initial year deficit result in the Results folder
+        #np.savetxt(directory_main + "Results/" + text_val[loc] + "_deficit_2019.csv",deficit, delimiter = ',')  #saves the initial year deficit result in the Results folder
 
         plant_cost = PlantAnnualizedCostFunction(solarMWs, windMWs, batteryMW)
         penalty_cost = np.sum(deficit) * 20000
+
+        model_result.append([text_val[loc],solarMWs[0],windMWs[0],batteryMW,annualized_cost,lcoe,plant_cost,penalty_cost])
+        df = pd.DataFrame(model_result, columns = ["Location", "PV Size (MW)", "Wind Size (MW)", 
+                                        "Battery Size (MW)", "Annualized Cost ($)", 
+                                        "LCOE ($)", "Plant Cost ($)", "Model Year Penalty Cost ($)"])
+        df.to_csv(directory_main + "Results/" + "Model Result.csv", index=False) 
         
         print("\n\n")
         print(text_val[loc])
@@ -291,23 +300,24 @@ if(True):
         print(f"Battery annualized: ${af10 * batt_capex:,.0f}")
         """
         
-        pl.plot(deficit)
-        pl.title("Hours in the year vs Energy Deficit (2019)" + text_val[loc])
-        pl.xlabel("Hours in the year (h)")
-        pl.ylabel("Power Generation Deficit (MWh)")
-        pl.show()
+        #pl.plot(deficit)
+        #pl.title("Hours in the year vs Energy Deficit (2019)" + text_val[loc])
+        #pl.xlabel("Hours in the year (h)")
+        #pl.ylabel("Power Generation Deficit (MWh)")
+        #pl.show()
   
 
         #code to run the data through 2020-2024
         data_years = [2020,2021,2022,2023,2024] 
         deficit_future = []  
+        deficit_future.append(deficit)
 
         solarCF_future = []  #adds empty array to solarCFs
         windCF_future = []
 
         for i in data_years:      
-            filename_solar = directory_main + state + str(i) + "_pv_" + str(lat_val[loc]) + "_" + str(lon_val[loc]) + ".csv"
-            filename_wind = directory_main + state + str(i) + "_wind_" + str(lat_val[loc]) + "_" + str(lon_val[loc]) + ".csv"
+            filename_solar = directory_main + str(state_val[loc]) + " data/" + str(i) + "_pv_" + str(lat_val[loc]) + "_" + str(lon_val[loc]) + ".csv"
+            filename_wind = directory_main + str(state_val[loc]) +  " data/" + str(i) + "_wind_" + str(lat_val[loc]) + "_" + str(lon_val[loc]) + ".csv"
         
             solarDataraw = pd.read_csv(str(filename_solar),skiprows=3)
             solarData = solarDataraw.to_xarray()
@@ -337,11 +347,11 @@ if(True):
             windCF_floop = windCF_future[[j],:]
             #print(windCF_floop.shape)
             deficit_future1,d_count = CalculatePowerDeficit(solarCF_floop, windCF_floop, requiredMWh, solarMWs, windMWs, batteryMW)
-            pl.plot(deficit_future1)
-            pl.xlabel("Hours in the year (h)")
-            pl.ylabel("Power Generation Deficit (MWh)")
-            pl.title(str(i))
-            pl.show()
+            #pl.plot(deficit_future1)
+            #pl.xlabel("Hours in the year (h)")
+            #pl.ylabel("Power Generation Deficit (MWh)")
+            #pl.title(str(i))
+            #pl.show()
             deficit_future.append(deficit_future1)
             print("deficit count in year: " + str(i) + " is:" + str(d_count))
             j=j+1
