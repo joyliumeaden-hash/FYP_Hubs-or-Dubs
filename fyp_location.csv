@@ -1,53 +1,49 @@
-Project Name,Lat,Lon
-Gippsland offshore wind,-38.4635,147.2854
-Hazelwood North Solar Farm,-38.2218,146.4749
-Glenrowan solar farm,-36.4735,146.1764
-Hawkesdale wind farm,-38.1480,142.3608
-Mortlake Energy Hub,-38.0475,142.7604
-Golden Plains Wind Farm,-37.9167,143.7540
-Elaine Solar Farm,-37.7388,143.9879
-Warracknabeal Energy Park (proposed),-36.1939,142.3563
-Murra Warra Solar Farm (proposed),-36.4443,142.3389
-Gannawarra Solar Farm,-35.7351,143.7800
-Meering West Wind Farm,-35.8712,143.7132
-Coopers Gap ,-26.7237,151.4699
-Dulacca Wind Farm,-26.6540,149.8483
-Mount Emerald Wind Farm,-17.1323,145.3799
-Kaban,-17.5605,145.4133
-Sample data,-24.0842,150.8041
-Kennedy Energy Park Stage 1,-20.8752,144.4212
-Western Downs Green Power Hub,-26.9549,150.6760
-Daydream Solar Farm,-20.4934,147.7705
-Kidston Solar Project KS1,-18.8896,144.1428
-Emerald Solar Farm,-23.5091,148.1299
-Ross River Solar Farm ,-19.4231,146.7206
-Childers Solar Farm,-25.3001,152.4048
-Haughton Solar Farm,-19.7247,147.0429
-Cattle Hill Wind Farm ,-42.1599,146.7348
-Granville Harbour Wind Farm,-41.7818,145.0453
-"Huxley Wind Farm, King Island",-39.9411,143.8924
-Musselroe Wind Farm,-40.7802,148.0105
-Bluff Point Wind Farm ,-40.7385,144.6891
-Studland Bay Wind Farm ,-40.7847,144.7295
-Sample data,-40.5919,146.9044
-Northern Midland Solar Farm,-41.8064,147.0980
-Weasel Solar Farm ,-42.2935,146.9851
-Bell Bay Solar Farm,-41.1123,146.8407
-King Island Solar Farm  ,-39.9411,143.8924
-Woakwine Wind farm,-37.3843,140.0686
-Robertstown Solar Project,-33.9839,139.0590
-Goyder South Hybrid Renewable Power Station,-33.6821,138.9333
-Cleve Wind Farm,-33.6186,136.3646
-Yadnarie Renewable Energy Facility,-33.6950,136.3856
-Yoorndoo Ilga Solar,-32.9203,137.5927
-Lincoln Gap Wind Farm,-32.5603,137.5554
-Bodangora Wind Farm ,-32.4053,149.0407
-Wellington Solar Farm, -32.5107,148.9646
-Sapphire Wind Farm,-29.6976,151.4099
-Metz Solar Farm ,-30.5174,151.8543
-Bullawah Wind Farm,-34.8518,145.1798
-Sunraysia Solar Farm,-34.8071,143.4897
-Hunter Coast Offshore Wind Project (proposed) ,-33.0000,152.0000
-Muswellbrook Solar Farm ,-32.2634,150.9437
-Wollongong Offshore Wind Project (proposed),-34.5000,151.2000
-Shoalhaven Solar Farm ,-34.9370,150.5894
+Project Name,Lat,Lon,State
+Gippsland offshore wind,-38.4635,147.2854,VIC
+Hazelwood North Solar Farm,-38.2218,146.4749,VIC
+Glenrowan solar farm,-36.4735,146.1764,VIC
+Hawkesdale wind farm,-38.1480,142.3608,VIC
+Mortlake Energy Hub,-38.0475,142.7604,VIC
+Golden Plains Wind Farm,-37.9167,143.7540,VIC
+Elaine Solar Farm,-37.7388,143.9879,VIC
+Warracknabeal Energy Park (proposed),-36.1939,142.3563,VIC
+Murra Warra Solar Farm (proposed),-36.4443,142.3389,VIC
+Gannawarra Solar Farm,-35.7351,143.7800,VIC
+Meering West Wind Farm,-35.8712,143.7132,VIC
+Coopers Gap ,-26.7237,151.4699,QLD
+Dulacca Wind Farm,-26.6540,149.8483,QLD
+Mount Emerald Wind Farm,-17.1323,145.3799,QLD
+Kaban,-17.5605,145.4133,QLD
+Sample data,-24.0842,150.8041,QLD
+Kennedy Energy Park Stage 1,-20.8752,144.4212,QLD
+Western Downs Green Power Hub,-26.9549,150.6760,QLD
+Daydream Solar Farm,-20.4934,147.7705,QLD
+Kidston Solar Project KS1,-18.8896,144.1428,QLD
+Emerald Solar Farm,-23.5091,148.1299,QLD
+Ross River Solar Farm ,-19.4231,146.7206,QLD
+Childers Solar Farm,-25.3001,152.4048,QLD
+Haughton Solar Farm,-19.7247,147.0429,QLD
+Cattle Hill Wind Farm ,-42.1598,146.7348,TAS
+Granville Harbour Wind Farm,-41.7818,145.0453,TAS
+"Huxley Wind Farm, King Island",-39.9411,143.8924,TAS
+Musselroe Wind Farm,-40.7802,148.0105,TAS
+Studland Bay Wind Farm ,-40.7847,144.7295,TAS
+Sample data,-40.5919,146.9044,TAS
+Northern Midland Solar Farm,-41.8064,147.0980,TAS
+Weasel Solar Farm ,-42.2935,146.9851,TAS
+Bell Bay Solar Farm,-41.1123,146.8407,TAS
+King Island Solar Farm  ,-39.9411,143.8924,TAS
+Woakwine Wind farm,-37.3843,140.0686,SA
+Robertstown Solar Project,-33.9839,139.0590,SA
+Goyder South Hybrid Renewable Power Station,-33.6821,138.9333,SA
+Cleve Wind Farm,-33.6186,136.3646,SA
+Yoorndoo Ilga Solar,-32.9203,137.5927,SA
+Bodangora Wind Farm ,-32.4053,149.0407,NSW
+Sapphire Wind Farm,-29.6976,151.4099,NSW
+Metz Solar Farm ,-30.5147,151.8543,NSW
+Bullawah Wind Farm,-34.8518,145.1798,NSW
+Sunraysia Solar Farm,-34.8071,143.4897,NSW
+Hunter Coast Offshore Wind Project (proposed) ,-33.0000,152.0000,NSW
+Muswellbrook Solar Farm ,-32.2634,150.9437,NSW
+Wollongong Offshore Wind Project (proposed),-34.5000,151.2000,NSW
+Shoalhaven Solar Farm ,-34.9370,150.5894,NSW
