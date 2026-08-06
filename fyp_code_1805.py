@@ -95,7 +95,7 @@ def CalculatePowerDeficit(solarCFs, windCFs, requiredMWh, solarMW, windMW, batte
             if powerDeficitMWh[i] > 0: 
                 deficit_count=deficit_count+1
     
-    return powerDeficitMWh, deficit_count   #this gives a final deficit of each hour in an array
+    return powerDeficitMWh, deficit_count, batteryStorage, totalMWh   #this gives a final deficit of each hour in an array
 
 
 def run_single_optimization(solarCFs, windCFs, requiredMWh):
@@ -183,8 +183,8 @@ lon_val = loc_data["Lon"]
 text_val = loc_data["Project Name"]
 state_val = loc_data["State"]
 
-numLocs = len(lat_val)
-#numLocs = 3  #manually input 10 as not all data has been downloaded
+#numLocs = len(lat_val)
+numLocs = 10  #manually input 10 as not all data has been downloaded
 #state = "VIC data/"
 
 #Uncomment this for a variable energy requirement profile 
@@ -205,6 +205,8 @@ for day in range(365):
 requiredMWh = requiredMWh[11:] + requiredMWh[:11]
 requiredMWh = np.array(requiredMWh)
 
+in_yr = "2020"
+
 if(True):
     
     solarCFs = []    #adds empty array to solarCFs
@@ -212,8 +214,8 @@ if(True):
     
     for loc in range(numLocs):  #opens each location's file
 
-        filename_solar = directory_main + str(state_val[loc]) + " data/2019_pv_" + str(lat_val[loc]) + "_" + str(lon_val[loc]) + ".csv"
-        filename_wind = directory_main + str(state_val[loc]) + " data/2019_wind_" + str(lat_val[loc]) + "_" + str(lon_val[loc]) + ".csv"
+        filename_solar = directory_main + str(state_val[loc]) + " data/" + in_yr + "_pv_" + str(lat_val[loc]) + "_" + str(lon_val[loc]) + ".csv"
+        filename_wind = directory_main + str(state_val[loc]) + " data/" + in_yr + "_wind_" + str(lat_val[loc]) + "_" + str(lon_val[loc]) + ".csv"
    
         solarDataraw = pd.read_csv(str(filename_solar),skiprows=3)
         solarData = solarDataraw.to_xarray()
@@ -254,7 +256,7 @@ if(True):
         annualized_cost = res["anualizedCost"]
         lcoe = annualized_cost/np.sum(requiredMWh)
 
-        deficit,d_count = CalculatePowerDeficit(solarCFs_loop, windCFs_loop, requiredMWh, solarMWs, windMWs, batteryMW)
+        deficit,d_count,storage,totgen = CalculatePowerDeficit(solarCFs_loop, windCFs_loop, requiredMWh, solarMWs, windMWs, batteryMW)
         #np.savetxt(directory_main + "Results/" + text_val[loc] + "_deficit_2019.csv",deficit, delimiter = ',')  #saves the initial year deficit result in the Results folder
 
         plant_cost = PlantAnnualizedCostFunction(solarMWs, windMWs, batteryMW)
@@ -264,7 +266,7 @@ if(True):
         df = pd.DataFrame(model_result, columns = ["Location", "PV Size (MW)", "Wind Size (MW)", 
                                         "Battery Size (MW)", "Annualized Cost ($)", 
                                         "LCOE ($)", "Plant Cost ($)", "Model Year Penalty Cost ($)"])
-        df.to_csv(directory_main + "Results/" + "Model Result.csv", index=False) 
+        df.to_csv(directory_main + in_yr + "_Results/" + "Model Result pen20000.csv", index=False) 
         
         print("\n\n")
         print(text_val[loc])
@@ -308,9 +310,8 @@ if(True):
   
 
         #code to run the data through 2020-2024
-        data_years = [2020,2021,2022,2023,2024] 
+        data_years = [2019,2020,2021,2022,2023,2024] 
         deficit_future = []  
-        deficit_future.append(deficit)
 
         solarCF_future = []  #adds empty array to solarCFs
         windCF_future = []
@@ -346,18 +347,23 @@ if(True):
             solarCF_floop = solarCF_future[[j],:]
             windCF_floop = windCF_future[[j],:]
             #print(windCF_floop.shape)
-            deficit_future1,d_count = CalculatePowerDeficit(solarCF_floop, windCF_floop, requiredMWh, solarMWs, windMWs, batteryMW)
+            deficit_future1,d_count,storage,totgen = CalculatePowerDeficit(solarCF_floop, windCF_floop, requiredMWh, solarMWs, windMWs, batteryMW)
             #pl.plot(deficit_future1)
             #pl.xlabel("Hours in the year (h)")
             #pl.ylabel("Power Generation Deficit (MWh)")
             #pl.title(str(i))
             #pl.show()
+            deficit_future1 = np.concatenate([[d_count],deficit_future1])
             deficit_future.append(deficit_future1)
+            genperhr = np.concatenate([[369],totgen])
+            deficit_future.append(genperhr)
+            storage = np.concatenate([[666],storage])
+            deficit_future.append(storage)
             print("deficit count in year: " + str(i) + " is:" + str(d_count))
             j=j+1
 
         deficit_future = np.transpose(deficit_future)
-        np.savetxt(directory_main + "Results/deficit_" + text_val[loc] + ".csv",deficit_future, delimiter = ',') #saves the all 5 future year results in Results folder for each location
+        np.savetxt(directory_main + in_yr + "_Results/deficit_" + text_val[loc] + ".csv",deficit_future, delimiter = ',') #saves the all 5 future year results in Results folder for each location
     
 
 else:
