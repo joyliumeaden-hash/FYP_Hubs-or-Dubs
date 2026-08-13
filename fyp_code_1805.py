@@ -142,7 +142,7 @@ def run_single_optimization(solarCFs, windCFs, requiredMWh):
       theBounds.append([0,None])     #This means theBounds right now = [0, None]
     
     #below uses scipy.optimize minimize function to find the minimal 
-    res = minimize(calculateAnnualizedCost,xinit,bounds=theBounds) #, method ="COBYLA") # , method='Nelder-Mead')
+    res = minimize(calculateAnnualizedCost,xinit,bounds=theBounds, method='Nelder-Mead')#method ="COBYLA") # , method='Nelder-Mead')
     
     
     final_solar = res.x[solarOffset:solarOffset + numSolar]    #gets the x value out that represents final solar 
@@ -183,8 +183,8 @@ lon_val = loc_data["Lon"]
 text_val = loc_data["Project Name"]
 state_val = loc_data["State"]
 
-#numLocs = len(lat_val)
-numLocs = 10  #manually input 10 as not all data has been downloaded
+numLocs = len(lat_val)
+#numLocs = 10  #manually input 10 as not all data has been downloaded
 #state = "VIC data/"
 
 #Uncomment this for a variable energy requirement profile 
@@ -205,7 +205,7 @@ for day in range(365):
 requiredMWh = requiredMWh[11:] + requiredMWh[:11]
 requiredMWh = np.array(requiredMWh)
 
-in_yr = "2020"
+in_yr = "2021"
 
 if(True):
     
@@ -266,14 +266,14 @@ if(True):
         df = pd.DataFrame(model_result, columns = ["Location", "PV Size (MW)", "Wind Size (MW)", 
                                         "Battery Size (MW)", "Annualized Cost ($)", 
                                         "LCOE ($)", "Plant Cost ($)", "Model Year Penalty Cost ($)"])
-        df.to_csv(directory_main + in_yr + "_Results/" + "Model Result pen20000.csv", index=False) 
+        df.to_csv(directory_main + in_yr + "_Results/" + "Model Result Nelder.csv", index=False) 
         
         print("\n\n")
         print(text_val[loc])
-        print(f"solar MW: {solarMWs[0]:,.2f}")
-        print(f"wind MW: {windMWs[0]:,.2f}")
-        print(f"battery MW: {batteryMW:,.2f}")
-        print(f"Annualized Cost: ${annualized_cost:,.0f}")
+        #print(f"solar MW: {solarMWs[0]:,.2f}")
+        #print(f"wind MW: {windMWs[0]:,.2f}")
+        #print(f"battery MW: {batteryMW:,.2f}")
+        #print(f"Annualized Cost: ${annualized_cost:,.0f}")
         print( res["success"] )
         print( res["message"] )
         print( f"LCOE estimate: ${lcoe:,.2f}")
@@ -343,6 +343,8 @@ if(True):
         #print(solarCF_future.shape)
         
         j=0
+        all_rows = []
+        row_labels = []
         for i in data_years:   
             solarCF_floop = solarCF_future[[j],:]
             windCF_floop = windCF_future[[j],:]
@@ -353,17 +355,29 @@ if(True):
             #pl.ylabel("Power Generation Deficit (MWh)")
             #pl.title(str(i))
             #pl.show()
+            """
             deficit_future1 = np.concatenate([[d_count],deficit_future1])
             deficit_future.append(deficit_future1)
-            genperhr = np.concatenate([[369],totgen])
+            genperhr = np.concatenate([[],totgen])
             deficit_future.append(genperhr)
             storage = np.concatenate([[666],storage])
             deficit_future.append(storage)
-            print("deficit count in year: " + str(i) + " is:" + str(d_count))
+            """
+            all_rows.append(deficit_future1)
+            all_rows.append(totgen)
+            all_rows.append(storage)
+
+            row_labels.append(f"{i} deficit (MW)")
+            row_labels.append(f"{i} generation (MW)")
+            row_labels.append(f"{i} storage (MW)")
+
+            #print("deficit count in year: " + str(i) + " is:" + str(d_count))
             j=j+1
 
-        deficit_future = np.transpose(deficit_future)
-        np.savetxt(directory_main + in_yr + "_Results/deficit_" + text_val[loc] + ".csv",deficit_future, delimiter = ',') #saves the all 5 future year results in Results folder for each location
+        #deficit_future = np.transpose(deficit_future)
+        results_df = pd.DataFrame(all_rows, index=row_labels).T
+        #results_df.to_csv(directory_main + in_yr + "_Results/deficit_" + text_val[loc] + ".csv", index=False)
+        #np.savetxt(directory_main + in_yr + "_Results/deficit_" + text_val[loc] + ".csv",deficit_future, delimiter = ',') #saves the all 5 future year results in Results folder for each location
     
 
 else:
