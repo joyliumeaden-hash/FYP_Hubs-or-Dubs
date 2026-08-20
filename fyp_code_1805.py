@@ -142,7 +142,7 @@ def run_single_optimization(solarCFs, windCFs, requiredMWh):
       theBounds.append([0,None])     #This means theBounds right now = [0, None]
     
     #below uses scipy.optimize minimize function to find the minimal 
-    res = minimize(calculateAnnualizedCost,xinit,bounds=theBounds, method='Nelder-Mead')#method ="COBYLA") # , method='Nelder-Mead')
+    res = minimize(calculateAnnualizedCost,xinit,bounds=theBounds)#, method='Nelder-Mead')#method ="COBYLA") # , method='Nelder-Mead')
     
     
     final_solar = res.x[solarOffset:solarOffset + numSolar]    #gets the x value out that represents final solar 
@@ -205,7 +205,7 @@ for day in range(365):
 requiredMWh = requiredMWh[11:] + requiredMWh[:11]
 requiredMWh = np.array(requiredMWh)
 
-in_yr = "2021"
+in_yr = "2023"
 
 if(True):
     
@@ -266,7 +266,7 @@ if(True):
         df = pd.DataFrame(model_result, columns = ["Location", "PV Size (MW)", "Wind Size (MW)", 
                                         "Battery Size (MW)", "Annualized Cost ($)", 
                                         "LCOE ($)", "Plant Cost ($)", "Model Year Penalty Cost ($)"])
-        df.to_csv(directory_main + in_yr + "_Results/" + "Model Result Nelder.csv", index=False) 
+        #df.to_csv(directory_main + in_yr + "_Results/" + "Model Result Nelder.csv", index=False) 
         
         print("\n\n")
         print(text_val[loc])
@@ -376,8 +376,8 @@ if(True):
 
         #deficit_future = np.transpose(deficit_future)
         results_df = pd.DataFrame(all_rows, index=row_labels).T
-        #results_df.to_csv(directory_main + in_yr + "_Results/deficit_" + text_val[loc] + ".csv", index=False)
-        #np.savetxt(directory_main + in_yr + "_Results/deficit_" + text_val[loc] + ".csv",deficit_future, delimiter = ',') #saves the all 5 future year results in Results folder for each location
+        results_df.to_csv(directory_main + in_yr + "_Results/deficit_" + text_val[loc] + ".csv", index=False)
+        ####np.savetxt(directory_main + in_yr + "_Results/deficit_" + text_val[loc] + ".csv",deficit_future, delimiter = ',') #saves the all 5 future year results in Results folder for each location
     
 
 else:
