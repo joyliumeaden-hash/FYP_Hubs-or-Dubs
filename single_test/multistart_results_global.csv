@@ -1,0 +1,2 @@
+ini_solar,ini_wind,ini_battery,solar_mw,wind_mw,battery_mw,annualized_cost,plant_cost,penalty_cost,lcoe,deficit_hours,converged,message
+100,100,100,320.73,53.73,90.56,98870305.23,80385799.49,18484505.74,318.68,14,True,Optimization terminated successfully.
