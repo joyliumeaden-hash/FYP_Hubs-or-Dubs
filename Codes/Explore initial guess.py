@@ -8,7 +8,7 @@ directory_main = "C:/Users/joyli//OneDrive/Desktop/FYP/"
 
 # ── Location to test (hardcoded index from fyp_location.csv) ─────────────────
 LOC_INDEX = 4
-BASE_YEAR  = "2024"
+BASE_YEAR  = "2019"
 
 # ── Demand profile ────────────────────────────────────────────────────────────
 requiredMWh = []
@@ -43,6 +43,8 @@ windDataraw  = pd.read_csv(filename_wind,  skiprows=3)
 
 solarCF = solarDataraw.to_xarray()["electricity"].values / 0.9
 windCF  = windDataraw.to_xarray()["electricity"].values  / 0.9
+
+print(f"electricity mean: {solarCF.mean():.4f}")
 
 solarCF = solarCF[:8760]
 windCF  = windCF[:8760]
@@ -90,16 +92,15 @@ def CalculatePowerDeficit(solarCFs, windCFs, requiredMWh, solarMW, windMW, batte
         prev_level = batteryStorage[i-1] if i > 0 else batteryStorage[0]
 
         if requiredMWh[i] == 0:
-            excess = totalMWh[i] * batteryEff
-            charge = min(excess, batteryMW)
-            batteryStorage[i] = min(prev_level + charge, batteryMWh)
+            charge = min(totalMWh[i], batteryMW)          # how much can go in (rate limited)
+            batteryStorage[i] = min(prev_level + charge * batteryEff, batteryMWh)  # efficiency on charge
             powerDeficitMWh[i] = 0
 
         elif totalMWh[i] > requiredMWh[i]:
             powerDeficitMWh[i] = 0
-            excess = (totalMWh[i] - requiredMWh[i]) * batteryEff
+            excess = totalMWh[i] - requiredMWh[i]
             charge = min(excess, batteryMW)
-            batteryStorage[i] = min(prev_level + charge, batteryMWh)
+            batteryStorage[i] = min(prev_level + charge * batteryEff, batteryMWh)
 
         else:
             discharge = min(prev_level, batteryMW)
@@ -204,7 +205,7 @@ print(f"\nCost range:   ${df['annualized_cost'].min():,.0f}  to  ${df['annualize
 #df.to_csv(output_path, index=False)
 #print(f"\nResults saved to: {output_path}")
 
-"""
+
 
 
 
@@ -215,12 +216,12 @@ print(f"\nCost range:   ${df['annualized_cost'].min():,.0f}  to  ${df['annualize
 # ── Multi-year robustness section ─────────────────────────────────────────────
 # Hardcode a plant arrangement to test across all years
 # Change these values to whatever arrangement you want to explore
-HARDCODED_SOLAR_MW   = 320.73  # MW
-HARDCODED_WIND_MW    = 53.73   # MW
-HARDCODED_BATTERY_MW = 90.56   # MW
+HARDCODED_SOLAR_MW   = 253.43  # MW
+HARDCODED_WIND_MW    = 72.32   # MW
+HARDCODED_BATTERY_MW = 104.3   # MW
 
 # Years to test
-data_years = [2019, 2020, 2021, 2022, 2023, 2024]
+data_years = [2019, 2020, 2021]#, 2022, 2023, 2024]
  
 print(f"\n\n── Multi-year robustness for hardcoded arrangement ──────────────────")
 print(f"Solar: {HARDCODED_SOLAR_MW} MW | Wind: {HARDCODED_WIND_MW} MW | Battery: {HARDCODED_BATTERY_MW} MW")
@@ -263,7 +264,32 @@ for j, yr in enumerate(data_years):
     deficit, d_count, storage, totgen = CalculatePowerDeficit(
         solarCF_floop, windCF_floop, requiredMWh,
         solarMWs_hc, windMWs_hc, batteryMW_hc)
- 
+
+
+    print(f"Battery - mean level: {storage.mean():.1f} MWh")
+    print(f"Battery - min level:  {storage.min():.1f} MWh")
+    print(f"Battery - max level:  {storage.max():.1f} MWh")
+    print(f"Hours battery full:   {np.sum(storage >= 4 * batteryMW_hc)}")
+    print(f"Hours battery empty:  {np.sum(storage <= 0)}")
+    print(f"Total generation:     {totgen.sum():.1f} MWh")
+
+    demand_mask = requiredMWh > 0
+
+    empty_during_demand = np.sum((storage <= 0) & demand_mask)
+    empty_outside_demand = np.sum((storage <= 0) & ~demand_mask)
+
+    print(f"Battery empty during demand hours: {empty_during_demand}")
+    print(f"Battery empty outside demand hours: {empty_outside_demand}")
+
+    deficit_hours_idx = np.where(deficit > 0)[0]
+    if len(deficit_hours_idx) > 0:
+        h = deficit_hours_idx[0]
+        print(f"\n  First deficit at hour {h}:")
+        for hh in range(max(0, h-3), min(8760, h+4)):
+            print(f"    hour {hh}: gen={totgen[hh]:.2f}, demand={requiredMWh[hh]:.0f}, "
+                  f"prev_storage={storage[hh-1]:.2f}, storage={storage[hh]:.2f}, "
+                  f"deficit={deficit[hh]:.2f}")
+            
     penalty_cost  = np.sum(deficit) * 20000
     total_cost    = plant_cost_hc + penalty_cost
     lcoe          = total_cost / np.sum(requiredMWh)
@@ -294,8 +320,7 @@ for j, yr in enumerate(data_years):
  
 # Save year summary
 summary_df = pd.DataFrame(year_summary)
-summary_df.to_csv(directory_main + "single_test/multiyear_summary.csv", index=False)
+#summary_df.to_csv(directory_main + "single_test/multiyear_summary.csv", index=False)
  
 print(f"\nHourly data saved to:  single_test/multiyear_hourly.csv")
 print(f"Year summary saved to: single_test/multiyear_summary.csv")
-"""

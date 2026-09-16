@@ -183,9 +183,9 @@ lon_val = loc_data["Lon"]
 text_val = loc_data["Project Name"]
 state_val = loc_data["State"]
 
-numLocs = len(lat_val)
-#numLocs = 10  #manually input 10 as not all data has been downloaded
-#state = "VIC data/"
+#numLocs = len(lat_val)
+numLocs = 10  #manually input 10 as not all data has been downloaded
+state = "VIC data/"
 
 #Uncomment this for a variable energy requirement profile 
 
@@ -205,7 +205,7 @@ for day in range(365):
 requiredMWh = requiredMWh[11:] + requiredMWh[:11]
 requiredMWh = np.array(requiredMWh)
 
-in_yr = "2023"
+in_yr = "2019"
 
 if(True):
     
@@ -214,8 +214,8 @@ if(True):
     
     for loc in range(numLocs):  #opens each location's file
 
-        filename_solar = directory_main + str(state_val[loc]) + " data/" + in_yr + "_pv_" + str(lat_val[loc]) + "_" + str(lon_val[loc]) + ".csv"
-        filename_wind = directory_main + str(state_val[loc]) + " data/" + in_yr + "_wind_" + str(lat_val[loc]) + "_" + str(lon_val[loc]) + ".csv"
+        filename_solar = directory_main + str(state_val[loc]) + " data old/" + in_yr + "_pv_" + str(lat_val[loc]) + "_" + str(lon_val[loc]) + ".csv"
+        filename_wind = directory_main + str(state_val[loc]) + " data old/" + in_yr + "_wind_" + str(lat_val[loc]) + "_" + str(lon_val[loc]) + ".csv"
    
         solarDataraw = pd.read_csv(str(filename_solar),skiprows=3)
         solarData = solarDataraw.to_xarray()
@@ -270,10 +270,10 @@ if(True):
         
         print("\n\n")
         print(text_val[loc])
-        #print(f"solar MW: {solarMWs[0]:,.2f}")
-        #print(f"wind MW: {windMWs[0]:,.2f}")
-        #print(f"battery MW: {batteryMW:,.2f}")
-        #print(f"Annualized Cost: ${annualized_cost:,.0f}")
+        print(f"solar MW: {solarMWs[0]:,.2f}")
+        print(f"wind MW: {windMWs[0]:,.2f}")
+        print(f"battery MW: {batteryMW:,.2f}")
+        print(f"Annualized Cost: ${annualized_cost:,.0f}")
         print( res["success"] )
         print( res["message"] )
         print( f"LCOE estimate: ${lcoe:,.2f}")
@@ -317,8 +317,8 @@ if(True):
         windCF_future = []
 
         for i in data_years:      
-            filename_solar = directory_main + str(state_val[loc]) + " data/" + str(i) + "_pv_" + str(lat_val[loc]) + "_" + str(lon_val[loc]) + ".csv"
-            filename_wind = directory_main + str(state_val[loc]) +  " data/" + str(i) + "_wind_" + str(lat_val[loc]) + "_" + str(lon_val[loc]) + ".csv"
+            filename_solar = directory_main + str(state_val[loc]) + " data old/" + str(i) + "_pv_" + str(lat_val[loc]) + "_" + str(lon_val[loc]) + ".csv"
+            filename_wind = directory_main + str(state_val[loc]) +  " data old/" + str(i) + "_wind_" + str(lat_val[loc]) + "_" + str(lon_val[loc]) + ".csv"
         
             solarDataraw = pd.read_csv(str(filename_solar),skiprows=3)
             solarData = solarDataraw.to_xarray()
@@ -376,7 +376,7 @@ if(True):
 
         #deficit_future = np.transpose(deficit_future)
         results_df = pd.DataFrame(all_rows, index=row_labels).T
-        results_df.to_csv(directory_main + in_yr + "_Results/deficit_" + text_val[loc] + ".csv", index=False)
+        #results_df.to_csv(directory_main + in_yr + "_Results/deficit_" + text_val[loc] + ".csv", index=False)
         ####np.savetxt(directory_main + in_yr + "_Results/deficit_" + text_val[loc] + ".csv",deficit_future, delimiter = ',') #saves the all 5 future year results in Results folder for each location
     
 
