@@ -24,8 +24,6 @@ projects = gpd.GeoDataFrame(
 
 
 
-
-
 results = pd.read_csv(result_directory + "Model Result.csv")
 results["Location"] = results["Location"].str.strip()
 
