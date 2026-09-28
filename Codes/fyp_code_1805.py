@@ -184,8 +184,8 @@ text_val = loc_data["Project Name"]
 state_val = loc_data["State"]
 
 #numLocs = len(lat_val)
-numLocs = 10  #manually input 10 as not all data has been downloaded
-state = "VIC data/"
+numLocs = 5  #manually input 10 as not all data has been downloaded
+state = "NSW data/"
 
 #Uncomment this for a variable energy requirement profile 
 
@@ -214,8 +214,8 @@ if(True):
     
     for loc in range(numLocs):  #opens each location's file
 
-        filename_solar = directory_main + str(state_val[loc]) + " data old/" + in_yr + "_pv_" + str(lat_val[loc]) + "_" + str(lon_val[loc]) + ".csv"
-        filename_wind = directory_main + str(state_val[loc]) + " data old/" + in_yr + "_wind_" + str(lat_val[loc]) + "_" + str(lon_val[loc]) + ".csv"
+        filename_solar = directory_main + str(state_val[loc]) + " data/" + in_yr + "_pv_" + str(lat_val[loc]) + "_" + str(lon_val[loc]) + ".csv"
+        filename_wind = directory_main + str(state_val[loc]) + " data/" + in_yr + "_wind_" + str(lat_val[loc]) + "_" + str(lon_val[loc]) + ".csv"
    
         solarDataraw = pd.read_csv(str(filename_solar),skiprows=3)
         solarData = solarDataraw.to_xarray()
@@ -317,8 +317,8 @@ if(True):
         windCF_future = []
 
         for i in data_years:      
-            filename_solar = directory_main + str(state_val[loc]) + " data old/" + str(i) + "_pv_" + str(lat_val[loc]) + "_" + str(lon_val[loc]) + ".csv"
-            filename_wind = directory_main + str(state_val[loc]) +  " data old/" + str(i) + "_wind_" + str(lat_val[loc]) + "_" + str(lon_val[loc]) + ".csv"
+            filename_solar = directory_main + str(state_val[loc]) + " data/" + str(i) + "_pv_" + str(lat_val[loc]) + "_" + str(lon_val[loc]) + ".csv"
+            filename_wind = directory_main + str(state_val[loc]) +  " data/" + str(i) + "_wind_" + str(lat_val[loc]) + "_" + str(lon_val[loc]) + ".csv"
         
             solarDataraw = pd.read_csv(str(filename_solar),skiprows=3)
             solarData = solarDataraw.to_xarray()

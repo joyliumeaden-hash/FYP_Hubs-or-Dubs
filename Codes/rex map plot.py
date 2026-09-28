@@ -39,9 +39,9 @@ projects = gpd.GeoDataFrame(
 rez = gpd.read_file("kmz_extracted/doc.kml").to_crs("EPSG:4326")
 matched = gpd.sjoin(projects, rez, how="left", predicate="within")
 
-#result = matched[["Project Name", "Lat", "Lon", "State", "Name"]].rename(columns={"Name": "REZ"})
+result = matched[["Project Name", "Lat", "Lon", "State", "Name"]].rename(columns={"Name": "REZ"})
 
-#result.to_csv("projects_matched_to_rez.csv", index=False)
+result.to_csv("projects_matched_to_rez.csv", index=False)
 #print(result)
 aus_map = gpd.read_file(user_directory + "SA2_2026_AUST_SHP_GDA2020/SA2_2026_AUST_GDA2020.shp").to_crs("EPSG:4326")
 states_to_show = ["New South Wales", "Victoria","Queensland","South Australia","Tasmania"]
