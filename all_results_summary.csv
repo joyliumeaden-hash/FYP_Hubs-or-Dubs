@@ -5,18 +5,6 @@ base_year,location,data_year,total_deficit_mwh,deficit_hours,total_gen_mwh,avg_s
 2019,Gippsland offshore wind,2022,2709.96,51,607419.23,509.56
 2019,Gippsland offshore wind,2023,972.19,18,622985.14,528.51
 2019,Gippsland offshore wind,2024,2155.89,51,630561.01,511.71
-2019,Hazelwood North Solar Farm,2019,526.17,11,704122.02,389.1
-2019,Hazelwood North Solar Farm,2020,1956.29,46,661876.59,377.94
-2019,Hazelwood North Solar Farm,2021,1538.05,33,679575.4,384.66
-2019,Hazelwood North Solar Farm,2022,2185.0,43,645734.88,376.39
-2019,Hazelwood North Solar Farm,2023,1046.27,20,675206.06,385.99
-2019,Hazelwood North Solar Farm,2024,1397.17,32,690292.98,381.55
-2019,Glenrowan solar farm,2019,509.29,11,784126.0,404.49
-2019,Glenrowan solar farm,2020,1682.53,32,753570.79,396.32
-2019,Glenrowan solar farm,2021,4793.01,103,747104.39,384.77
-2019,Glenrowan solar farm,2022,4700.71,86,712976.01,384.18
-2019,Glenrowan solar farm,2023,3174.33,58,742851.08,390.14
-2019,Glenrowan solar farm,2024,1509.03,31,787264.16,396.98
 2019,Hawkesdale wind farm,2019,105.24,4,749484.49,466.78
 2019,Hawkesdale wind farm,2020,1802.11,38,723853.82,459.08
 2019,Hawkesdale wind farm,2021,149.71,2,745193.7,470.12
@@ -65,6 +53,18 @@ base_year,location,data_year,total_deficit_mwh,deficit_hours,total_gen_mwh,avg_s
 2019,Meering West Wind Farm,2022,1047.55,29,704631.56,394.45
 2019,Meering West Wind Farm,2023,1112.54,20,743784.57,401.72
 2019,Meering West Wind Farm,2024,1334.4,28,755115.6,400.69
+2019,Cosgrove Solar Farm,2019,101.83,4,721077.37,485.87
+2019,Cosgrove Solar Farm,2020,730.75,14,695946.85,479.51
+2019,Cosgrove Solar Farm,2021,3354.87,66,700367.27,468.88
+2019,Cosgrove Solar Farm,2022,4281.34,90,662447.02,454.59
+2019,Cosgrove Solar Farm,2023,1866.99,31,701170.31,473.64
+2019,Cosgrove Solar Farm,2024,1684.44,38,727528.61,475.23
+2019,V9 Offshore,2019,151.08,4,818867.23,433.08
+2019,V9 Offshore,2020,948.43,19,805356.21,425.06
+2019,V9 Offshore,2021,58.12,2,815765.52,436.16
+2019,V9 Offshore,2022,401.73,9,787908.76,429.84
+2019,V9 Offshore,2023,1178.91,21,815186.01,434.04
+2019,V9 Offshore,2024,1556.86,30,799312.39,428.46
 2019,Coopers Gap ,2019,452.42,7,537390.61,410.39
 2019,Coopers Gap ,2020,889.79,19,517919.09,403.31
 2019,Coopers Gap ,2021,2559.14,46,512064.27,399.15
@@ -89,12 +89,12 @@ base_year,location,data_year,total_deficit_mwh,deficit_hours,total_gen_mwh,avg_s
 2019,Kaban,2022,329.53,21,625432.45,270.41
 2019,Kaban,2023,233.81,11,656262.45,270.34
 2019,Kaban,2024,109.31,9,646809.79,273.05
-2019,Sample data,2019,410.08,8,663824.78,455.54
-2019,Sample data,2020,3403.25,69,610354.47,428.49
-2019,Sample data,2021,4309.98,80,633976.57,435.39
-2019,Sample data,2022,3165.46,64,599460.82,425.56
-2019,Sample data,2023,1278.32,25,641648.81,450.87
-2019,Sample data,2024,1462.71,29,638637.01,443.19
+2019,Sample data,2019,117.84,3,552626.42,405.23
+2019,Sample data,2020,698.03,11,542272.57,404.74
+2019,Sample data,2021,1153.66,21,531485.2,400.47
+2019,Sample data,2022,3062.06,51,523620.47,393.8
+2019,Sample data,2023,377.21,9,542964.29,406.37
+2019,Sample data,2024,71.58,2,532244.22,401.92
 2019,Kennedy Energy Park Stage 1,2019,230.46,10,544256.83,282.63
 2019,Kennedy Energy Park Stage 1,2020,1768.85,48,530143.18,275.63
 2019,Kennedy Energy Park Stage 1,2021,557.61,23,507786.16,273.12
@@ -119,12 +119,6 @@ base_year,location,data_year,total_deficit_mwh,deficit_hours,total_gen_mwh,avg_s
 2019,Kidston Solar Project KS1,2022,1666.21,42,488637.48,278.04
 2019,Kidston Solar Project KS1,2023,2268.13,53,510426.64,278.79
 2019,Kidston Solar Project KS1,2024,1034.56,29,504581.9,276.25
-2019,Emerald Solar Farm,2019,86.14,6,528492.81,315.51
-2019,Emerald Solar Farm,2020,1135.6,31,519519.6,311.76
-2019,Emerald Solar Farm,2021,1611.8,30,514995.49,311.39
-2019,Emerald Solar Farm,2022,3771.2,71,502601.7,304.39
-2019,Emerald Solar Farm,2023,1078.94,25,518196.7,313.01
-2019,Emerald Solar Farm,2024,2364.77,49,506203.12,308.77
 2019,Ross River Solar Farm ,2019,110.19,7,612056.62,274.57
 2019,Ross River Solar Farm ,2020,178.17,12,601577.32,272.07
 2019,Ross River Solar Farm ,2021,839.87,25,577315.59,268.81
@@ -143,6 +137,24 @@ base_year,location,data_year,total_deficit_mwh,deficit_hours,total_gen_mwh,avg_s
 2019,Haughton Solar Farm,2022,899.4,22,555479.5,280.87
 2019,Haughton Solar Farm,2023,297.72,13,574473.87,281.93
 2019,Haughton Solar Farm,2024,507.93,17,565324.5,282.85
+2019,Banana,2019,203.66,4,562302.68,370.6
+2019,Banana,2020,726.55,15,550065.02,367.2
+2019,Banana,2021,1150.86,28,544315.23,364.79
+2019,Banana,2022,3437.51,67,529637.81,352.33
+2019,Banana,2023,874.67,18,550883.81,367.89
+2019,Banana,2024,1194.51,27,533518.08,360.54
+2019,Broad Sound Solar Farm,2019,263.73,13,606466.95,306.76
+2019,Broad Sound Solar Farm,2020,1180.52,33,597783.19,304.75
+2019,Broad Sound Solar Farm,2021,710.16,24,587892.91,303.42
+2019,Broad Sound Solar Farm,2022,2119.54,40,578864.13,301.52
+2019,Broad Sound Solar Farm,2023,125.59,10,598791.93,307.74
+2019,Broad Sound Solar Farm,2024,289.4,13,594725.87,306.81
+2019,Barcaldine Solar Farm,2019,161.06,10,716810.89,279.24
+2019,Barcaldine Solar Farm,2020,264.22,9,704964.32,280.41
+2019,Barcaldine Solar Farm,2021,294.78,10,698270.86,279.45
+2019,Barcaldine Solar Farm,2022,787.68,26,682350.16,277.18
+2019,Barcaldine Solar Farm,2023,65.15,7,697965.4,280.12
+2019,Barcaldine Solar Farm,2024,137.08,14,686673.01,279.12
 2019,Cattle Hill Wind Farm ,2019,92.92,4,611870.59,518.6
 2019,Cattle Hill Wind Farm ,2020,5774.03,121,561001.2,477.89
 2019,Cattle Hill Wind Farm ,2021,7652.35,143,576566.1,488.26
@@ -155,12 +167,6 @@ base_year,location,data_year,total_deficit_mwh,deficit_hours,total_gen_mwh,avg_s
 2019,Granville Harbour Wind Farm,2022,1054.24,23,670367.84,534.3
 2019,Granville Harbour Wind Farm,2023,1433.66,24,684731.49,548.61
 2019,Granville Harbour Wind Farm,2024,1520.1,29,683754.97,527.18
-2019,"Huxley Wind Farm, King Island",2019,225.3,6,682873.08,528.07
-2019,"Huxley Wind Farm, King Island",2020,986.74,25,659898.48,514.47
-2019,"Huxley Wind Farm, King Island",2021,1433.28,34,676276.8,517.79
-2019,"Huxley Wind Farm, King Island",2022,1832.42,41,662947.3,511.8
-2019,"Huxley Wind Farm, King Island",2023,509.11,7,679944.25,532.57
-2019,"Huxley Wind Farm, King Island",2024,2972.27,64,673551.79,513.07
 2019,Musselroe Wind Farm,2019,154.29,6,592769.1,528.99
 2019,Musselroe Wind Farm,2020,4787.79,94,546150.79,485.61
 2019,Musselroe Wind Farm,2021,5344.22,99,564509.39,503.97
@@ -173,12 +179,6 @@ base_year,location,data_year,total_deficit_mwh,deficit_hours,total_gen_mwh,avg_s
 2019,Studland Bay Wind Farm ,2022,1135.79,28,672239.98,369.63
 2019,Studland Bay Wind Farm ,2023,927.3,19,685120.08,380.35
 2019,Studland Bay Wind Farm ,2024,1751.04,37,684852.98,375.6
-2019,Sample data,2019,410.08,8,663824.78,455.54
-2019,Sample data,2020,3403.25,69,610354.47,428.49
-2019,Sample data,2021,4309.98,80,633976.57,435.39
-2019,Sample data,2022,3165.46,64,599460.82,425.56
-2019,Sample data,2023,1278.32,25,641648.81,450.87
-2019,Sample data,2024,1462.71,29,638637.01,443.19
 2019,Northern Midland Solar Farm,2019,326.38,6,687305.32,432.74
 2019,Northern Midland Solar Farm,2020,5379.11,107,627903.32,402.9
 2019,Northern Midland Solar Farm,2021,6468.67,122,652771.18,407.66
@@ -233,6 +233,30 @@ base_year,location,data_year,total_deficit_mwh,deficit_hours,total_gen_mwh,avg_s
 2019,Yoorndoo Ilga Solar,2022,1215.47,31,582038.83,293.72
 2019,Yoorndoo Ilga Solar,2023,1559.84,35,599415.67,295.73
 2019,Yoorndoo Ilga Solar,2024,1139.41,31,589438.03,293.98
+2019,Roxby Downs Solar Farm,2019,80.94,4,582430.68,468.2
+2019,Roxby Downs Solar Farm,2020,0.0,0,563715.82,469.81
+2019,Roxby Downs Solar Farm,2021,13.37,1,568104.76,469.05
+2019,Roxby Downs Solar Farm,2022,465.08,13,559419.46,460.13
+2019,Roxby Downs Solar Farm,2023,1293.47,29,569628.28,462.81
+2019,Roxby Downs Solar Farm,2024,1200.57,25,558486.45,459.88
+2019,S2 Solar,2019,126.77,4,689101.11,326.49
+2019,S2 Solar,2020,385.44,12,659410.53,320.22
+2019,S2 Solar,2021,589.97,14,672934.03,321.68
+2019,S2 Solar,2022,762.46,16,644928.06,320.9
+2019,S2 Solar,2023,1631.31,32,671793.39,322.12
+2019,S2 Solar,2024,1397.48,30,667537.11,318.8
+2019,Streaky Bay Wind Farm,2019,250.41,7,691915.57,371.58
+2019,Streaky Bay Wind Farm,2020,491.73,12,695400.68,369.17
+2019,Streaky Bay Wind Farm,2021,466.54,11,702229.43,372.33
+2019,Streaky Bay Wind Farm,2022,499.22,8,691977.66,370.62
+2019,Streaky Bay Wind Farm,2023,918.92,20,701417.2,369.22
+2019,Streaky Bay Wind Farm,2024,595.79,14,701665.47,375.44
+2019,Yorke Peninsula Wind Farm,2019,130.68,5,731323.75,335.27
+2019,Yorke Peninsula Wind Farm,2020,771.44,18,714957.11,331.19
+2019,Yorke Peninsula Wind Farm,2021,750.68,22,725647.01,335.38
+2019,Yorke Peninsula Wind Farm,2022,951.11,29,696686.03,330.89
+2019,Yorke Peninsula Wind Farm,2023,782.98,20,734530.95,332.49
+2019,Yorke Peninsula Wind Farm,2024,476.51,12,739253.67,338.64
 2019,Bodangora Wind Farm ,2019,136.4,8,638679.18,472.86
 2019,Bodangora Wind Farm ,2020,934.91,20,603620.33,464.5
 2019,Bodangora Wind Farm ,2021,963.69,19,613026.55,462.41
@@ -263,12 +287,6 @@ base_year,location,data_year,total_deficit_mwh,deficit_hours,total_gen_mwh,avg_s
 2019,Sunraysia Solar Farm,2022,628.62,19,688701.42,372.61
 2019,Sunraysia Solar Farm,2023,790.66,14,721975.37,377.02
 2019,Sunraysia Solar Farm,2024,1913.01,44,721329.85,372.92
-2019,Hunter Coast Offshore Wind Project (proposed) ,2019,607.32,13,697251.86,376.61
-2019,Hunter Coast Offshore Wind Project (proposed) ,2020,654.61,12,664831.4,375.1
-2019,Hunter Coast Offshore Wind Project (proposed) ,2021,1293.22,23,666245.53,374.13
-2019,Hunter Coast Offshore Wind Project (proposed) ,2022,1217.38,24,650665.74,365.85
-2019,Hunter Coast Offshore Wind Project (proposed) ,2023,434.66,8,705894.19,383.12
-2019,Hunter Coast Offshore Wind Project (proposed) ,2024,1687.92,33,660060.53,371.52
 2019,Muswellbrook Solar Farm ,2019,756.03,15,793770.13,437.6
 2019,Muswellbrook Solar Farm ,2020,418.91,11,745473.37,433.63
 2019,Muswellbrook Solar Farm ,2021,326.94,4,755972.06,437.27
@@ -281,30 +299,54 @@ base_year,location,data_year,total_deficit_mwh,deficit_hours,total_gen_mwh,avg_s
 2019,Wollongong Offshore Wind Project (proposed),2022,1432.17,31,645931.42,463.03
 2019,Wollongong Offshore Wind Project (proposed),2023,1422.83,28,652818.97,475.01
 2019,Wollongong Offshore Wind Project (proposed),2024,1771.19,30,636819.96,466.59
-2019,Shoalhaven Solar Farm ,2019,642.54,13,605097.4,535.62
-2019,Shoalhaven Solar Farm ,2020,922.1,18,579249.5,526.31
-2019,Shoalhaven Solar Farm ,2021,1529.74,31,590383.99,528.45
-2019,Shoalhaven Solar Farm ,2022,1723.0,41,581778.61,515.22
-2019,Shoalhaven Solar Farm ,2023,486.99,11,602342.69,541.65
-2019,Shoalhaven Solar Farm ,2024,2472.8,44,569675.79,520.69
+2019,Broken Hill Solar Farm,2019,330.78,7,563871.31,424.68
+2019,Broken Hill Solar Farm,2020,385.9,7,552732.18,425.52
+2019,Broken Hill Solar Farm,2021,864.69,26,551193.94,415.59
+2019,Broken Hill Solar Farm,2022,384.04,11,532043.51,415.2
+2019,Broken Hill Solar Farm,2023,1809.41,31,548610.38,423.27
+2019,Broken Hill Solar Farm,2024,1127.23,26,543150.73,417.15
+2019,Wagga Wagga North Solar Farm,2019,1010.08,19,649138.27,519.07
+2019,Wagga Wagga North Solar Farm,2020,4935.48,100,608146.56,490.86
+2019,Wagga Wagga North Solar Farm,2021,4980.1,102,615260.24,487.13
+2019,Wagga Wagga North Solar Farm,2022,5145.9,108,588035.39,472.19
+2019,Wagga Wagga North Solar Farm,2023,4275.01,83,624742.7,493.7
+2019,Wagga Wagga North Solar Farm,2024,2948.27,64,637643.89,502.36
+2019,Cooma Solar Farm,2019,165.69,5,635084.62,451.53
+2019,Cooma Solar Farm,2020,5801.92,108,585915.78,423.87
+2019,Cooma Solar Farm,2021,3123.26,59,596407.39,423.38
+2019,Cooma Solar Farm,2022,4774.07,95,570863.61,412.38
+2019,Cooma Solar Farm,2023,1803.22,33,604799.44,438.84
+2019,Cooma Solar Farm,2024,4971.07,101,602036.34,423.19
+2019,N13,2019,219.12,5,603554.53,400.54
+2019,N13,2020,1128.81,24,576019.09,395.03
+2019,N13,2021,1210.89,23,576018.67,395.3
+2019,N13,2022,546.38,10,559461.71,395.43
+2019,N13,2023,1147.7,17,587091.71,400.1
+2019,N13,2024,2836.42,53,565107.83,385.77
+2019,Moree Solar Farm,2019,372.51,8,613367.85,447.73
+2019,Moree Solar Farm,2020,981.55,19,576842.95,437.69
+2019,Moree Solar Farm,2021,948.62,19,578960.76,437.96
+2019,Moree Solar Farm,2022,2123.54,39,569071.73,432.65
+2019,Moree Solar Farm,2023,234.08,4,601181.1,449.14
+2019,Moree Solar Farm,2024,371.18,7,561774.82,432.49
+2019,Snowy Wind,2019,238.7,4,594076.25,531.21
+2019,Snowy Wind,2020,4766.23,92,553157.56,499.43
+2019,Snowy Wind,2021,6750.28,127,557525.35,494.1
+2019,Snowy Wind,2022,6921.26,137,535134.73,480.79
+2019,Snowy Wind,2023,6874.69,127,559168.48,492.3
+2019,Snowy Wind,2024,3294.27,72,579111.6,511.79
+2019,N10 Offshore,2019,129.96,8,799270.25,373.26
+2019,N10 Offshore,2020,202.87,3,763749.03,373.54
+2019,N10 Offshore,2021,625.5,11,767361.42,372.43
+2019,N10 Offshore,2022,513.3,9,757438.01,371.44
+2019,N10 Offshore,2023,32.55,2,802712.0,378.19
+2019,N10 Offshore,2024,273.74,9,753810.12,371.17
 2020,Gippsland offshore wind,2019,0.0,0,923493.68,419.44
 2020,Gippsland offshore wind,2020,92.03,4,870110.48,411.16
 2020,Gippsland offshore wind,2021,249.86,4,909172.95,415.03
 2020,Gippsland offshore wind,2022,885.72,17,874605.82,412.23
 2020,Gippsland offshore wind,2023,775.41,15,896640.7,417.48
 2020,Gippsland offshore wind,2024,473.17,13,904694.59,413.28
-2020,Hazelwood North Solar Farm,2019,0.0,0,890886.99,501.08
-2020,Hazelwood North Solar Farm,2020,232.18,9,836840.04,493.69
-2020,Hazelwood North Solar Farm,2021,248.06,4,855423.89,499.25
-2020,Hazelwood North Solar Farm,2022,585.09,13,807768.41,491.79
-2020,Hazelwood North Solar Farm,2023,460.68,10,846899.52,499.99
-2020,Hazelwood North Solar Farm,2024,410.85,9,853102.34,495.64
-2020,Glenrowan solar farm,2019,437.15,9,805784.99,521.17
-2020,Glenrowan solar farm,2020,674.66,13,775739.11,513.12
-2020,Glenrowan solar farm,2021,2808.64,62,766756.9,499.03
-2020,Glenrowan solar farm,2022,2663.35,49,731450.53,498.76
-2020,Glenrowan solar farm,2023,1947.02,34,757542.63,506.23
-2020,Glenrowan solar farm,2024,476.31,14,803591.61,511.99
 2020,Hawkesdale wind farm,2019,0.0,0,874305.24,501.35
 2020,Hawkesdale wind farm,2020,489.63,10,843518.91,492.38
 2020,Hawkesdale wind farm,2021,0.0,0,869438.8,502.65
@@ -353,6 +395,18 @@ base_year,location,data_year,total_deficit_mwh,deficit_hours,total_gen_mwh,avg_s
 2020,Meering West Wind Farm,2022,2605.46,57,579475.05,368.51
 2020,Meering West Wind Farm,2023,1471.65,30,605677.19,378.73
 2020,Meering West Wind Farm,2024,2755.85,56,613057.98,378.67
+2020,Cosgrove Solar Farm,2019,96.74,3,731856.81,530.81
+2020,Cosgrove Solar Farm,2020,238.72,4,707950.15,525.82
+2020,Cosgrove Solar Farm,2021,2152.72,48,711128.87,513.49
+2020,Cosgrove Solar Farm,2022,2914.8,56,671877.85,501.11
+2020,Cosgrove Solar Farm,2023,1282.46,22,708979.72,519.87
+2020,Cosgrove Solar Farm,2024,1151.52,25,736064.89,519.11
+2020,V9 Offshore,2019,0.0,0,835177.46,508.47
+2020,V9 Offshore,2020,193.85,8,820841.81,499.88
+2020,V9 Offshore,2021,48.24,1,831647.18,511.86
+2020,V9 Offshore,2022,156.37,3,802452.24,504.66
+2020,V9 Offshore,2023,983.0,15,832509.91,509.24
+2020,V9 Offshore,2024,842.22,18,823403.87,505.52
 2020,Coopers Gap ,2019,449.28,14,662173.95,341.98
 2020,Coopers Gap ,2020,65.44,7,641444.51,341.89
 2020,Coopers Gap ,2021,1027.66,19,634842.37,339.88
@@ -377,12 +431,12 @@ base_year,location,data_year,total_deficit_mwh,deficit_hours,total_gen_mwh,avg_s
 2020,Kaban,2022,470.97,22,640265.7,271.3
 2020,Kaban,2023,95.19,9,652662.86,271.06
 2020,Kaban,2024,207.29,8,645263.34,273.95
-2020,Sample data,2019,66.33,2,920660.21,484.06
-2020,Sample data,2020,506.82,12,847674.52,470.72
-2020,Sample data,2021,1369.71,30,881434.49,468.26
-2020,Sample data,2022,952.18,18,834281.81,471.25
-2020,Sample data,2023,391.72,11,892058.04,480.49
-2020,Sample data,2024,188.06,4,889931.96,478.25
+2020,Sample data,2019,355.67,8,556449.43,410.15
+2020,Sample data,2020,157.24,5,539227.85,407.83
+2020,Sample data,2021,1313.59,25,527940.42,401.18
+2020,Sample data,2022,1624.72,28,523962.07,400.37
+2020,Sample data,2023,261.22,4,536740.82,408.36
+2020,Sample data,2024,317.39,6,533893.51,406.1
 2020,Kennedy Energy Park Stage 1,2019,50.21,3,748967.4,251.31
 2020,Kennedy Energy Park Stage 1,2020,156.58,11,734089.47,248.96
 2020,Kennedy Energy Park Stage 1,2021,68.22,8,705908.86,249.57
@@ -407,12 +461,6 @@ base_year,location,data_year,total_deficit_mwh,deficit_hours,total_gen_mwh,avg_s
 2020,Kidston Solar Project KS1,2022,776.89,18,579924.97,294.05
 2020,Kidston Solar Project KS1,2023,470.5,14,590516.62,295.82
 2020,Kidston Solar Project KS1,2024,227.86,4,584065.98,296.02
-2020,Emerald Solar Farm,2019,61.29,4,583192.89,319.35
-2020,Emerald Solar Farm,2020,649.84,18,571969.85,314.08
-2020,Emerald Solar Farm,2021,1158.68,21,567028.01,314.47
-2020,Emerald Solar Farm,2022,2728.1,57,553313.14,308.59
-2020,Emerald Solar Farm,2023,385.97,11,569412.46,315.27
-2020,Emerald Solar Farm,2024,1388.6,34,558569.6,311.93
 2020,Ross River Solar Farm ,2019,157.81,5,586817.44,291.44
 2020,Ross River Solar Farm ,2020,142.76,9,577840.39,288.56
 2020,Ross River Solar Farm ,2021,1017.06,31,554913.57,284.08
@@ -431,6 +479,24 @@ base_year,location,data_year,total_deficit_mwh,deficit_hours,total_gen_mwh,avg_s
 2020,Haughton Solar Farm,2022,998.63,22,528456.7,318.98
 2020,Haughton Solar Farm,2023,384.92,11,548140.64,319.72
 2020,Haughton Solar Farm,2024,576.88,15,539521.57,320.85
+2020,Banana,2019,331.67,8,552832.26,344.21
+2020,Banana,2020,711.44,17,539229.85,339.47
+2020,Banana,2021,1301.81,28,534214.95,338.51
+2020,Banana,2022,3121.43,65,520777.07,328.52
+2020,Banana,2023,880.38,21,538769.14,340.68
+2020,Banana,2024,1166.77,27,523347.36,334.17
+2020,Broad Sound Solar Farm,2019,10.4,4,719030.01,329.12
+2020,Broad Sound Solar Farm,2020,378.86,9,705000.56,326.42
+2020,Broad Sound Solar Farm,2021,264.36,11,692345.7,326.65
+2020,Broad Sound Solar Farm,2022,881.37,18,680860.58,324.9
+2020,Broad Sound Solar Farm,2023,14.15,4,706013.5,329.52
+2020,Broad Sound Solar Farm,2024,21.61,2,702838.99,329.12
+2020,Barcaldine Solar Farm,2019,390.03,15,674146.91,267.85
+2020,Barcaldine Solar Farm,2020,326.82,14,663875.13,268.5
+2020,Barcaldine Solar Farm,2021,432.3,15,658084.64,267.96
+2020,Barcaldine Solar Farm,2022,1236.11,35,642639.76,264.92
+2020,Barcaldine Solar Farm,2023,134.66,10,658637.34,268.42
+2020,Barcaldine Solar Farm,2024,282.11,20,646434.82,267.77
 2020,Cattle Hill Wind Farm ,2019,0.51,1,969670.63,516.63
 2020,Cattle Hill Wind Farm ,2020,369.95,9,878704.89,502.74
 2020,Cattle Hill Wind Farm ,2021,1904.94,33,905048.8,501.62
@@ -443,12 +509,6 @@ base_year,location,data_year,total_deficit_mwh,deficit_hours,total_gen_mwh,avg_s
 2020,Granville Harbour Wind Farm,2022,567.59,10,848230.06,516.92
 2020,Granville Harbour Wind Farm,2023,822.65,13,871873.1,526.17
 2020,Granville Harbour Wind Farm,2024,648.8,11,870030.14,516.43
-2020,"Huxley Wind Farm, King Island",2019,4.19,1,868175.92,555.98
-2020,"Huxley Wind Farm, King Island",2020,94.21,3,842611.6,546.49
-2020,"Huxley Wind Farm, King Island",2021,524.61,14,859334.09,549.83
-2020,"Huxley Wind Farm, King Island",2022,877.37,15,840191.65,545.34
-2020,"Huxley Wind Farm, King Island",2023,299.81,5,862488.78,559.85
-2020,"Huxley Wind Farm, King Island",2024,2198.21,40,843700.94,544.35
 2020,Musselroe Wind Farm,2019,15.28,1,909860.26,461.66
 2020,Musselroe Wind Farm,2020,1031.47,17,839500.46,447.41
 2020,Musselroe Wind Farm,2021,2106.63,42,866137.58,449.07
@@ -461,12 +521,6 @@ base_year,location,data_year,total_deficit_mwh,deficit_hours,total_gen_mwh,avg_s
 2020,Studland Bay Wind Farm ,2022,0.0,0,819281.08,604.55
 2020,Studland Bay Wind Farm ,2023,307.51,5,837553.72,611.35
 2020,Studland Bay Wind Farm ,2024,692.29,16,834271.49,604.58
-2020,Sample data,2019,66.33,2,920660.21,484.06
-2020,Sample data,2020,506.82,12,847674.52,470.72
-2020,Sample data,2021,1369.71,30,881434.49,468.26
-2020,Sample data,2022,952.18,18,834281.81,471.25
-2020,Sample data,2023,391.72,11,892058.04,480.49
-2020,Sample data,2024,188.06,4,889931.96,478.25
 2020,Northern Midland Solar Farm,2019,70.9,1,1167611.57,461.31
 2020,Northern Midland Solar Farm,2020,307.3,8,1059728.02,450.57
 2020,Northern Midland Solar Farm,2021,1377.8,29,1106912.43,451.38
@@ -521,6 +575,30 @@ base_year,location,data_year,total_deficit_mwh,deficit_hours,total_gen_mwh,avg_s
 2020,Yoorndoo Ilga Solar,2022,267.43,6,688921.66,356.87
 2020,Yoorndoo Ilga Solar,2023,658.44,11,712188.04,358.37
 2020,Yoorndoo Ilga Solar,2024,498.42,9,700718.92,357.69
+2020,Roxby Downs Solar Farm,2019,890.6,26,477895.04,417.44
+2020,Roxby Downs Solar Farm,2020,191.17,7,462579.32,412.52
+2020,Roxby Downs Solar Farm,2021,473.61,11,466213.03,414.51
+2020,Roxby Downs Solar Farm,2022,1820.56,42,459118.26,402.2
+2020,Roxby Downs Solar Farm,2023,2827.66,57,467141.56,406.27
+2020,Roxby Downs Solar Farm,2024,2687.38,52,458250.23,402.18
+2020,S2 Solar,2019,154.02,3,662602.22,393.96
+2020,S2 Solar,2020,60.56,4,641241.95,386.46
+2020,S2 Solar,2021,195.52,4,650553.98,386.37
+2020,S2 Solar,2022,502.38,11,628490.52,387.34
+2020,S2 Solar,2023,1260.47,20,645572.12,388.43
+2020,S2 Solar,2024,1365.94,30,639316.74,383.4
+2020,Streaky Bay Wind Farm,2019,213.37,5,708581.22,399.66
+2020,Streaky Bay Wind Farm,2020,273.96,8,717406.45,397.35
+2020,Streaky Bay Wind Farm,2021,350.89,9,723274.64,400.62
+2020,Streaky Bay Wind Farm,2022,550.45,13,711328.53,396.75
+2020,Streaky Bay Wind Farm,2023,906.81,20,718613.19,395.85
+2020,Streaky Bay Wind Farm,2024,573.29,12,716746.41,402.63
+2020,Yorke Peninsula Wind Farm,2019,133.18,4,778168.64,311.65
+2020,Yorke Peninsula Wind Farm,2020,566.84,14,765810.02,308.65
+2020,Yorke Peninsula Wind Farm,2021,386.16,15,774535.5,310.56
+2020,Yorke Peninsula Wind Farm,2022,633.42,21,747897.1,307.83
+2020,Yorke Peninsula Wind Farm,2023,527.55,14,784277.91,308.27
+2020,Yorke Peninsula Wind Farm,2024,474.99,14,783830.22,312.54
 2020,Bodangora Wind Farm ,2019,148.54,7,882489.28,339.95
 2020,Bodangora Wind Farm ,2020,145.91,8,837479.96,337.98
 2020,Bodangora Wind Farm ,2021,515.29,12,848544.97,337.87
@@ -551,12 +629,6 @@ base_year,location,data_year,total_deficit_mwh,deficit_hours,total_gen_mwh,avg_s
 2020,Sunraysia Solar Farm,2022,1449.18,39,635537.1,336.44
 2020,Sunraysia Solar Farm,2023,1384.61,26,667531.85,342.12
 2020,Sunraysia Solar Farm,2024,2530.58,57,667037.51,339.24
-2020,Hunter Coast Offshore Wind Project (proposed) ,2019,1114.45,24,549887.89,490.84
-2020,Hunter Coast Offshore Wind Project (proposed) ,2020,631.07,10,526870.8,488.3
-2020,Hunter Coast Offshore Wind Project (proposed) ,2021,1542.98,26,528417.84,485.29
-2020,Hunter Coast Offshore Wind Project (proposed) ,2022,2830.19,56,517621.15,470.53
-2020,Hunter Coast Offshore Wind Project (proposed) ,2023,822.51,17,553260.28,503.77
-2020,Hunter Coast Offshore Wind Project (proposed) ,2024,2283.64,41,521341.87,481.89
 2020,Muswellbrook Solar Farm ,2019,958.86,18,691667.19,450.43
 2020,Muswellbrook Solar Farm ,2020,435.76,12,655452.66,446.09
 2020,Muswellbrook Solar Farm ,2021,313.07,7,662690.86,447.76
@@ -569,30 +641,54 @@ base_year,location,data_year,total_deficit_mwh,deficit_hours,total_gen_mwh,avg_s
 2020,Wollongong Offshore Wind Project (proposed),2022,337.01,9,805135.09,367.07
 2020,Wollongong Offshore Wind Project (proposed),2023,878.13,19,834807.04,371.73
 2020,Wollongong Offshore Wind Project (proposed),2024,1472.52,26,804543.56,366.8
-2020,Shoalhaven Solar Farm ,2019,401.09,10,721324.82,518.55
-2020,Shoalhaven Solar Farm ,2020,230.05,5,687019.14,513.09
-2020,Shoalhaven Solar Farm ,2021,697.13,13,701980.18,514.52
-2020,Shoalhaven Solar Farm ,2022,239.51,5,688061.19,506.89
-2020,Shoalhaven Solar Farm ,2023,116.5,2,718313.89,521.33
-2020,Shoalhaven Solar Farm ,2024,1357.33,24,677382.92,506.19
+2020,Broken Hill Solar Farm,2019,452.54,11,549381.18,474.29
+2020,Broken Hill Solar Farm,2020,138.21,4,540564.78,476.66
+2020,Broken Hill Solar Farm,2021,1077.61,32,538978.24,462.99
+2020,Broken Hill Solar Farm,2022,478.43,9,520720.31,463.47
+2020,Broken Hill Solar Farm,2023,1654.45,28,532512.96,473.17
+2020,Broken Hill Solar Farm,2024,1192.3,24,529913.27,464.56
+2020,Wagga Wagga North Solar Farm,2019,570.06,10,950116.42,481.21
+2020,Wagga Wagga North Solar Farm,2020,316.95,9,896359.72,472.91
+2020,Wagga Wagga North Solar Farm,2021,766.78,15,902796.34,474.73
+2020,Wagga Wagga North Solar Farm,2022,371.95,9,870024.26,471.53
+2020,Wagga Wagga North Solar Farm,2023,725.35,13,911963.24,474.51
+2020,Wagga Wagga North Solar Farm,2024,352.25,8,928241.92,475.1
+2020,Cooma Solar Farm,2019,42.91,1,1048652.35,396.69
+2020,Cooma Solar Farm,2020,561.44,12,991198.72,390.58
+2020,Cooma Solar Farm,2021,675.72,12,995188.11,393.74
+2020,Cooma Solar Farm,2022,0.0,0,953120.75,394.79
+2020,Cooma Solar Farm,2023,206.91,5,996432.16,395.85
+2020,Cooma Solar Farm,2024,318.62,6,979321.63,391.86
+2020,N13,2019,158.57,3,766506.74,396.65
+2020,N13,2020,197.63,6,730607.18,391.46
+2020,N13,2021,239.3,5,732525.99,391.98
+2020,N13,2022,176.69,3,706322.88,392.97
+2020,N13,2023,674.03,9,749814.76,394.81
+2020,N13,2024,1217.56,24,720773.11,384.46
+2020,Moree Solar Farm,2019,252.82,6,646724.01,471.63
+2020,Moree Solar Farm,2020,564.35,13,613891.69,464.18
+2020,Moree Solar Farm,2021,643.52,13,614069.92,463.15
+2020,Moree Solar Farm,2022,1933.77,36,605871.41,457.92
+2020,Moree Solar Farm,2023,33.47,1,624196.5,472.89
+2020,Moree Solar Farm,2024,204.85,4,588475.28,459.25
+2020,Snowy Wind,2019,257.14,5,1050571.26,384.41
+2020,Snowy Wind,2020,470.49,16,987092.96,379.76
+2020,Snowy Wind,2021,800.71,16,988013.26,379.06
+2020,Snowy Wind,2022,672.65,12,957188.96,377.68
+2020,Snowy Wind,2023,1434.22,22,984124.65,379.16
+2020,Snowy Wind,2024,370.56,9,1017279.86,381.69
+2020,N10 Offshore,2019,746.2,15,635406.6,446.52
+2020,N10 Offshore,2020,179.98,4,613988.27,445.63
+2020,N10 Offshore,2021,1276.54,21,617761.61,444.6
+2020,N10 Offshore,2022,1538.01,33,611357.27,441.48
+2020,N10 Offshore,2023,344.03,12,633297.48,455.24
+2020,N10 Offshore,2024,633.33,13,601229.48,444.34
 2021,Gippsland offshore wind,2019,122.51,4,707408.09,458.22
 2021,Gippsland offshore wind,2020,1129.87,26,666347.85,445.75
 2021,Gippsland offshore wind,2021,366.3,8,696283.3,448.24
 2021,Gippsland offshore wind,2022,2154.69,42,669930.64,443.32
 2021,Gippsland offshore wind,2023,1045.82,18,686870.23,456.45
 2021,Gippsland offshore wind,2024,1660.84,40,693502.22,443.41
-2021,Hazelwood North Solar Farm,2019,137.42,4,777447.09,495.97
-2021,Hazelwood North Solar Farm,2020,732.24,17,730639.26,486.71
-2021,Hazelwood North Solar Farm,2021,263.02,6,749138.99,491.96
-2021,Hazelwood North Solar Farm,2022,872.28,18,710450.62,483.41
-2021,Hazelwood North Solar Farm,2023,531.85,11,743494.99,494.35
-2021,Hazelwood North Solar Farm,2024,483.32,11,756627.77,488.89
-2021,Glenrowan solar farm,2019,0.0,0,970675.32,569.46
-2021,Glenrowan solar farm,2020,246.73,6,934660.54,563.67
-2021,Glenrowan solar farm,2021,816.55,17,923530.3,552.13
-2021,Glenrowan solar farm,2022,1026.93,21,880967.88,553.11
-2021,Glenrowan solar farm,2023,675.72,11,911788.15,559.75
-2021,Glenrowan solar farm,2024,0.0,0,967314.53,562.79
 2021,Hawkesdale wind farm,2019,383.77,10,768249.54,406.6
 2021,Hawkesdale wind farm,2020,2104.09,42,742342.67,399.61
 2021,Hawkesdale wind farm,2021,223.65,6,763794.06,409.23
@@ -641,6 +737,18 @@ base_year,location,data_year,total_deficit_mwh,deficit_hours,total_gen_mwh,avg_s
 2021,Meering West Wind Farm,2022,946.6,25,712484.84,388.28
 2021,Meering West Wind Farm,2023,791.17,18,749139.37,394.7
 2021,Meering West Wind Farm,2024,1356.94,27,759648.36,392.78
+2021,Cosgrove Solar Farm,2019,88.02,2,913520.34,440.46
+2021,Cosgrove Solar Farm,2020,271.54,5,888892.57,438.75
+2021,Cosgrove Solar Farm,2021,886.37,20,888598.13,433.13
+2021,Cosgrove Solar Farm,2022,881.49,15,837114.48,426.7
+2021,Cosgrove Solar Farm,2023,481.83,7,876254.88,437.63
+2021,Cosgrove Solar Farm,2024,1089.04,25,911147.97,432.17
+2021,V9 Offshore,2019,602.45,14,734501.19,469.87
+2021,V9 Offshore,2020,1990.06,42,722741.62,459.86
+2021,V9 Offshore,2021,95.14,7,731956.38,472.19
+2021,V9 Offshore,2022,869.43,22,707476.49,464.75
+2021,V9 Offshore,2023,1568.75,28,730495.89,471.16
+2021,V9 Offshore,2024,2946.86,59,711674.12,460.27
 2021,Coopers Gap ,2019,185.03,4,652157.37,445.26
 2021,Coopers Gap ,2020,0.0,0,633361.72,446.77
 2021,Coopers Gap ,2021,575.77,9,627163.38,443.51
@@ -665,12 +773,12 @@ base_year,location,data_year,total_deficit_mwh,deficit_hours,total_gen_mwh,avg_s
 2021,Kaban,2022,99.89,10,711194.85,284.66
 2021,Kaban,2023,6.63,2,726773.43,286.02
 2021,Kaban,2024,41.48,3,718339.32,286.79
-2021,Sample data,2019,0.0,0,1212579.15,417.46
-2021,Sample data,2020,31.82,1,1116284.37,410.54
-2021,Sample data,2021,230.96,6,1160606.5,408.56
-2021,Sample data,2022,625.52,12,1098400.62,410.7
-2021,Sample data,2023,169.65,5,1174600.95,415.64
-2021,Sample data,2024,139.64,2,1171508.41,413.5
+2021,Sample data,2019,0.0,0,714518.68,361.15
+2021,Sample data,2020,316.58,6,702298.83,360.04
+2021,Sample data,2021,364.13,8,688424.36,358.75
+2021,Sample data,2022,2046.49,34,677578.86,353.8
+2021,Sample data,2023,65.97,1,703739.92,361.87
+2021,Sample data,2024,1.22,1,688514.61,360.95
 2021,Kennedy Energy Park Stage 1,2019,497.16,20,557391.99,269.13
 2021,Kennedy Energy Park Stage 1,2020,1280.37,37,553565.28,266.59
 2021,Kennedy Energy Park Stage 1,2021,113.67,10,536715.38,267.3
@@ -695,12 +803,6 @@ base_year,location,data_year,total_deficit_mwh,deficit_hours,total_gen_mwh,avg_s
 2021,Kidston Solar Project KS1,2022,301.27,16,670250.96,251.05
 2021,Kidston Solar Project KS1,2023,140.15,8,683607.6,252.36
 2021,Kidston Solar Project KS1,2024,87.11,5,676116.75,252.64
-2021,Emerald Solar Farm,2019,44.03,12,685315.09,297.49
-2021,Emerald Solar Farm,2020,568.85,17,673856.18,294.3
-2021,Emerald Solar Farm,2021,675.41,18,667982.83,294.14
-2021,Emerald Solar Farm,2022,2310.45,58,651916.5,288.23
-2021,Emerald Solar Farm,2023,219.44,8,672287.74,295.58
-2021,Emerald Solar Farm,2024,918.34,27,656414.83,291.23
 2021,Ross River Solar Farm ,2019,405.36,23,743353.01,242.36
 2021,Ross River Solar Farm ,2020,131.89,15,740245.38,243.59
 2021,Ross River Solar Farm ,2021,71.14,10,713785.39,241.74
@@ -719,6 +821,24 @@ base_year,location,data_year,total_deficit_mwh,deficit_hours,total_gen_mwh,avg_s
 2021,Haughton Solar Farm,2022,502.65,13,678571.82,262.79
 2021,Haughton Solar Farm,2023,104.14,7,693038.03,264.8
 2021,Haughton Solar Farm,2024,93.96,7,681399.89,265.35
+2021,Banana,2019,22.32,4,772255.82,319.72
+2021,Banana,2020,319.24,9,757694.96,318.37
+2021,Banana,2021,205.12,8,748885.98,317.43
+2021,Banana,2022,2237.73,58,727309.4,309.95
+2021,Banana,2023,328.54,7,760629.24,319.5
+2021,Banana,2024,298.64,16,734418.11,315.61
+2021,Broad Sound Solar Farm,2019,67.51,7,670223.66,321.01
+2021,Broad Sound Solar Farm,2020,675.06,20,657747.54,318.41
+2021,Broad Sound Solar Farm,2021,407.88,17,646101.19,318.18
+2021,Broad Sound Solar Farm,2022,1191.76,22,635521.3,316.45
+2021,Broad Sound Solar Farm,2023,28.1,7,658721.19,321.48
+2021,Broad Sound Solar Farm,2024,64.91,5,655497.16,320.84
+2021,Barcaldine Solar Farm,2019,953.19,22,575429.46,318.35
+2021,Barcaldine Solar Farm,2020,864.26,19,565820.49,319.09
+2021,Barcaldine Solar Farm,2021,537.16,12,560389.8,318.84
+2021,Barcaldine Solar Farm,2022,1518.66,30,547662.94,314.21
+2021,Barcaldine Solar Farm,2023,336.96,7,560048.99,317.92
+2021,Barcaldine Solar Farm,2024,438.14,11,551163.95,316.35
 2021,Cattle Hill Wind Farm ,2019,0.0,0,937123.45,562.05
 2021,Cattle Hill Wind Farm ,2020,332.76,7,850257.82,546.19
 2021,Cattle Hill Wind Farm ,2021,1832.0,32,875547.86,544.84
@@ -731,12 +851,6 @@ base_year,location,data_year,total_deficit_mwh,deficit_hours,total_gen_mwh,avg_s
 2021,Granville Harbour Wind Farm,2022,68.61,3,855929.17,624.45
 2021,Granville Harbour Wind Farm,2023,299.2,7,855358.25,626.56
 2021,Granville Harbour Wind Farm,2024,0.0,0,856211.71,628.35
-2021,"Huxley Wind Farm, King Island",2019,305.29,5,909791.26,415.37
-2021,"Huxley Wind Farm, King Island",2020,491.98,9,881195.95,408.85
-2021,"Huxley Wind Farm, King Island",2021,534.0,11,900751.32,411.25
-2021,"Huxley Wind Farm, King Island",2022,798.49,18,881779.17,408.62
-2021,"Huxley Wind Farm, King Island",2023,339.05,6,904804.29,418.58
-2021,"Huxley Wind Farm, King Island",2024,2062.83,37,890397.35,408.3
 2021,Musselroe Wind Farm,2019,0.0,0,1125501.31,474.18
 2021,Musselroe Wind Farm,2020,767.17,21,1033784.15,463.54
 2021,Musselroe Wind Farm,2021,659.06,15,1072770.2,462.38
@@ -749,12 +863,6 @@ base_year,location,data_year,total_deficit_mwh,deficit_hours,total_gen_mwh,avg_s
 2021,Studland Bay Wind Farm ,2022,0.0,0,1052100.57,419.08
 2021,Studland Bay Wind Farm ,2023,211.73,3,1075496.13,420.37
 2021,Studland Bay Wind Farm ,2024,683.8,17,1071361.21,416.01
-2021,Sample data,2019,0.0,0,1212579.15,417.46
-2021,Sample data,2020,31.82,1,1116284.37,410.54
-2021,Sample data,2021,230.96,6,1160606.5,408.56
-2021,Sample data,2022,625.52,12,1098400.62,410.7
-2021,Sample data,2023,169.65,5,1174600.95,415.64
-2021,Sample data,2024,139.64,2,1171508.41,413.5
 2021,Northern Midland Solar Farm,2019,17.13,1,1271316.16,426.92
 2021,Northern Midland Solar Farm,2020,289.5,5,1158186.46,419.4
 2021,Northern Midland Solar Farm,2021,986.72,22,1206489.71,418.21
@@ -809,6 +917,30 @@ base_year,location,data_year,total_deficit_mwh,deficit_hours,total_gen_mwh,avg_s
 2021,Yoorndoo Ilga Solar,2022,663.74,16,630711.0,313.69
 2021,Yoorndoo Ilga Solar,2023,1246.48,29,653965.53,316.12
 2021,Yoorndoo Ilga Solar,2024,887.8,20,643712.26,315.38
+2021,Roxby Downs Solar Farm,2019,469.81,15,545651.6,428.15
+2021,Roxby Downs Solar Farm,2020,77.45,2,528524.84,427.54
+2021,Roxby Downs Solar Farm,2021,121.72,5,532965.47,426.52
+2021,Roxby Downs Solar Farm,2022,731.43,16,525149.03,421.44
+2021,Roxby Downs Solar Farm,2023,1646.41,38,531139.95,420.67
+2021,Roxby Downs Solar Farm,2024,1714.64,31,523238.3,418.37
+2021,S2 Solar,2019,120.18,3,638554.97,420.56
+2021,S2 Solar,2020,116.98,6,616388.61,411.68
+2021,S2 Solar,2021,141.67,4,626174.7,411.38
+2021,S2 Solar,2022,434.9,9,603841.68,412.89
+2021,S2 Solar,2023,1229.3,20,622228.26,413.91
+2021,S2 Solar,2024,1368.44,31,616675.66,408.45
+2021,Streaky Bay Wind Farm,2019,383.51,22,789099.22,260.82
+2021,Streaky Bay Wind Farm,2020,696.92,29,796162.57,259.41
+2021,Streaky Bay Wind Farm,2021,426.58,16,803289.34,261.38
+2021,Streaky Bay Wind Farm,2022,778.07,21,790747.09,260.02
+2021,Streaky Bay Wind Farm,2023,1088.35,33,800112.57,258.97
+2021,Streaky Bay Wind Farm,2024,741.09,20,799149.32,262.43
+2021,Yorke Peninsula Wind Farm,2019,68.43,2,832725.73,314.75
+2021,Yorke Peninsula Wind Farm,2020,458.65,12,820947.71,312.2
+2021,Yorke Peninsula Wind Farm,2021,173.77,10,829526.79,313.27
+2021,Yorke Peninsula Wind Farm,2022,348.29,12,802216.37,312.07
+2021,Yorke Peninsula Wind Farm,2023,402.6,13,840035.05,311.91
+2021,Yorke Peninsula Wind Farm,2024,370.5,10,837989.7,314.89
 2021,Bodangora Wind Farm ,2019,262.08,6,644890.66,490.62
 2021,Bodangora Wind Farm ,2020,882.45,19,623876.76,487.31
 2021,Bodangora Wind Farm ,2021,150.13,3,625278.52,485.69
@@ -839,12 +971,6 @@ base_year,location,data_year,total_deficit_mwh,deficit_hours,total_gen_mwh,avg_s
 2021,Sunraysia Solar Farm,2022,1284.79,36,597970.81,424.66
 2021,Sunraysia Solar Farm,2023,1200.1,21,627896.2,433.21
 2021,Sunraysia Solar Farm,2024,2182.69,49,627417.08,429.27
-2021,Hunter Coast Offshore Wind Project (proposed) ,2019,300.99,5,607675.4,653.89
-2021,Hunter Coast Offshore Wind Project (proposed) ,2020,151.99,4,584169.44,655.54
-2021,Hunter Coast Offshore Wind Project (proposed) ,2021,141.34,4,586205.7,650.54
-2021,Hunter Coast Offshore Wind Project (proposed) ,2022,699.59,14,575401.77,635.0
-2021,Hunter Coast Offshore Wind Project (proposed) ,2023,160.31,3,608797.37,662.38
-2021,Hunter Coast Offshore Wind Project (proposed) ,2024,431.98,12,576723.26,645.09
 2021,Muswellbrook Solar Farm ,2019,911.72,15,655169.18,498.94
 2021,Muswellbrook Solar Farm ,2020,499.94,14,618916.64,492.49
 2021,Muswellbrook Solar Farm ,2021,294.27,7,626407.09,494.51
@@ -857,30 +983,54 @@ base_year,location,data_year,total_deficit_mwh,deficit_hours,total_gen_mwh,avg_s
 2021,Wollongong Offshore Wind Project (proposed),2022,1907.15,40,543528.97,686.37
 2021,Wollongong Offshore Wind Project (proposed),2023,842.67,18,565600.01,720.34
 2021,Wollongong Offshore Wind Project (proposed),2024,1936.14,32,544171.22,697.93
-2021,Shoalhaven Solar Farm ,2019,359.73,8,685006.63,616.07
-2021,Shoalhaven Solar Farm ,2020,137.5,3,653133.6,608.44
-2021,Shoalhaven Solar Farm ,2021,401.97,9,667000.51,609.14
-2021,Shoalhaven Solar Farm ,2022,284.87,7,654521.59,601.26
-2021,Shoalhaven Solar Farm ,2023,0.0,0,682092.19,618.89
-2021,Shoalhaven Solar Farm ,2024,1176.01,22,643623.81,600.82
+2021,Broken Hill Solar Farm,2019,188.17,3,633622.37,443.63
+2021,Broken Hill Solar Farm,2020,210.73,6,619154.49,442.72
+2021,Broken Hill Solar Farm,2021,116.06,4,617510.1,437.42
+2021,Broken Hill Solar Farm,2022,79.73,3,595607.2,437.33
+2021,Broken Hill Solar Farm,2023,1374.59,24,618389.01,440.44
+2021,Broken Hill Solar Farm,2024,369.88,12,609648.71,436.63
+2021,Wagga Wagga North Solar Farm,2019,567.38,10,1004593.76,436.62
+2021,Wagga Wagga North Solar Farm,2020,297.09,7,950646.15,430.98
+2021,Wagga Wagga North Solar Farm,2021,631.63,13,955610.13,432.19
+2021,Wagga Wagga North Solar Farm,2022,374.06,10,924237.03,429.79
+2021,Wagga Wagga North Solar Farm,2023,732.44,12,963119.6,433.12
+2021,Wagga Wagga North Solar Farm,2024,331.89,6,979125.16,432.03
+2021,Cooma Solar Farm,2019,41.19,1,693434.89,560.75
+2021,Cooma Solar Farm,2020,1490.12,29,658717.93,548.61
+2021,Cooma Solar Farm,2021,648.02,14,659515.99,550.36
+2021,Cooma Solar Farm,2022,565.01,11,631713.66,547.24
+2021,Cooma Solar Farm,2023,199.15,4,658598.22,554.31
+2021,Cooma Solar Farm,2024,1892.69,37,645552.19,541.78
+2021,N13,2019,206.44,6,832399.58,341.14
+2021,N13,2020,222.38,8,793950.07,337.83
+2021,N13,2021,132.7,3,794927.18,338.15
+2021,N13,2022,241.69,7,769455.87,338.87
+2021,N13,2023,694.33,11,811842.04,340.17
+2021,N13,2024,1039.72,25,780950.98,332.6
+2021,Moree Solar Farm,2019,257.07,4,793296.05,396.28
+2021,Moree Solar Farm,2020,508.04,11,748615.89,392.45
+2021,Moree Solar Farm,2021,305.02,5,750429.0,391.54
+2021,Moree Solar Farm,2022,1060.2,21,738643.24,388.36
+2021,Moree Solar Farm,2023,0.0,0,773173.07,397.89
+2021,Moree Solar Farm,2024,23.72,1,724833.53,392.33
+2021,Snowy Wind,2019,89.09,1,786041.14,575.45
+2021,Snowy Wind,2020,1047.16,22,743596.36,565.63
+2021,Snowy Wind,2021,866.17,15,740416.96,562.67
+2021,Snowy Wind,2022,684.21,14,722340.76,559.2
+2021,Snowy Wind,2023,1244.23,19,733644.88,561.71
+2021,Snowy Wind,2024,655.15,13,757250.79,566.38
+2021,N10 Offshore,2019,157.78,3,719489.03,514.66
+2021,N10 Offshore,2020,76.84,1,687330.09,513.95
+2021,N10 Offshore,2021,183.02,5,690557.67,511.91
+2021,N10 Offshore,2022,351.79,6,681584.87,509.8
+2021,N10 Offshore,2023,0.0,0,722717.49,520.5
+2021,N10 Offshore,2024,90.45,2,678513.86,511.13
 2022,Gippsland offshore wind,2019,0.0,0,760041.34,640.02
 2022,Gippsland offshore wind,2020,176.08,5,716045.56,626.43
 2022,Gippsland offshore wind,2021,125.08,2,748198.99,631.43
 2022,Gippsland offshore wind,2022,586.69,11,719795.88,620.33
 2022,Gippsland offshore wind,2023,687.56,13,737952.75,636.74
 2022,Gippsland offshore wind,2024,523.62,12,744749.25,621.75
-2022,Hazelwood North Solar Farm,2019,121.5,3,833572.99,457.94
-2022,Hazelwood North Solar Farm,2020,576.2,13,783462.29,450.27
-2022,Hazelwood North Solar Farm,2021,226.63,5,803785.2,455.17
-2022,Hazelwood North Solar Farm,2022,616.47,11,762923.23,447.51
-2022,Hazelwood North Solar Farm,2023,520.7,11,798117.26,456.27
-2022,Hazelwood North Solar Farm,2024,492.53,9,813847.59,453.5
-2022,Glenrowan solar farm,2019,0.0,0,1120584.48,555.8
-2022,Glenrowan solar farm,2020,141.19,3,1076946.33,550.86
-2022,Glenrowan solar farm,2021,571.23,10,1067657.06,543.14
-2022,Glenrowan solar farm,2022,367.06,12,1018879.78,542.95
-2022,Glenrowan solar farm,2023,470.46,7,1061478.81,547.28
-2022,Glenrowan solar farm,2024,0.0,0,1124957.42,551.59
 2022,Hawkesdale wind farm,2019,129.29,4,740274.79,531.75
 2022,Hawkesdale wind farm,2020,1599.55,34,715085.0,523.2
 2022,Hawkesdale wind farm,2021,98.71,2,736017.0,536.26
@@ -929,6 +1079,18 @@ base_year,location,data_year,total_deficit_mwh,deficit_hours,total_gen_mwh,avg_s
 2022,Meering West Wind Farm,2022,456.6,17,733463.17,460.25
 2022,Meering West Wind Farm,2023,494.52,10,769060.19,466.85
 2022,Meering West Wind Farm,2024,774.01,17,779188.17,462.87
+2022,Cosgrove Solar Farm,2019,0.0,0,1009260.12,433.95
+2022,Cosgrove Solar Farm,2020,93.98,2,975719.39,430.44
+2022,Cosgrove Solar Farm,2021,839.89,20,980571.04,425.48
+2022,Cosgrove Solar Farm,2022,515.79,10,926715.69,420.58
+2022,Cosgrove Solar Farm,2023,478.29,9,978668.15,429.25
+2022,Cosgrove Solar Farm,2024,436.1,11,1015900.58,425.46
+2022,V9 Offshore,2019,380.52,8,843978.39,508.37
+2022,V9 Offshore,2020,1323.53,25,831351.81,499.82
+2022,V9 Offshore,2021,120.42,4,841639.11,512.56
+2022,V9 Offshore,2022,177.16,3,814759.49,505.2
+2022,V9 Offshore,2023,1369.25,25,837642.9,510.88
+2022,V9 Offshore,2024,2773.12,51,804720.82,497.64
 2022,Coopers Gap ,2019,286.08,5,680857.97,377.67
 2022,Coopers Gap ,2020,61.51,2,657570.31,377.2
 2022,Coopers Gap ,2021,920.55,14,650411.71,374.15
@@ -953,12 +1115,12 @@ base_year,location,data_year,total_deficit_mwh,deficit_hours,total_gen_mwh,avg_s
 2022,Kaban,2022,167.07,9,666346.85,292.04
 2022,Kaban,2023,11.43,2,682867.04,292.97
 2022,Kaban,2024,72.76,3,674736.16,294.52
-2022,Sample data,2019,139.49,2,775936.98,520.06
-2022,Sample data,2020,1046.86,25,716068.22,500.37
-2022,Sample data,2021,2178.19,41,745921.23,497.71
-2022,Sample data,2022,1064.59,19,707186.48,498.05
-2022,Sample data,2023,662.65,16,754850.82,512.71
-2022,Sample data,2024,456.32,11,755934.79,513.33
+2022,Sample data,2019,315.83,7,812298.65,342.27
+2022,Sample data,2020,15.56,4,782385.23,341.98
+2022,Sample data,2021,458.24,12,765609.14,339.45
+2022,Sample data,2022,450.02,9,762569.59,339.67
+2022,Sample data,2023,104.92,2,776518.59,341.77
+2022,Sample data,2024,31.25,3,777944.0,341.85
 2022,Kennedy Energy Park Stage 1,2019,45.26,2,810360.52,263.47
 2022,Kennedy Energy Park Stage 1,2020,91.42,6,788534.47,261.57
 2022,Kennedy Energy Park Stage 1,2021,46.65,6,754784.53,261.83
@@ -983,12 +1145,6 @@ base_year,location,data_year,total_deficit_mwh,deficit_hours,total_gen_mwh,avg_s
 2022,Kidston Solar Project KS1,2022,116.58,10,675076.57,267.69
 2022,Kidston Solar Project KS1,2023,99.95,6,696296.24,268.52
 2022,Kidston Solar Project KS1,2024,60.58,2,688504.22,269.46
-2022,Emerald Solar Farm,2019,0.0,0,791135.44,414.07
-2022,Emerald Solar Farm,2020,321.86,6,771353.32,411.82
-2022,Emerald Solar Farm,2021,315.58,7,764823.76,410.67
-2022,Emerald Solar Farm,2022,419.77,7,746086.6,407.95
-2022,Emerald Solar Farm,2023,0.0,0,764097.71,412.38
-2022,Emerald Solar Farm,2024,0.0,0,757640.86,410.88
 2022,Ross River Solar Farm ,2019,41.04,5,713267.82,259.97
 2022,Ross River Solar Farm ,2020,131.25,11,699893.81,258.41
 2022,Ross River Solar Farm ,2021,282.92,11,671257.01,256.64
@@ -1007,6 +1163,24 @@ base_year,location,data_year,total_deficit_mwh,deficit_hours,total_gen_mwh,avg_s
 2022,Haughton Solar Farm,2022,155.77,9,689006.22,262.41
 2022,Haughton Solar Farm,2023,50.85,10,719160.99,263.63
 2022,Haughton Solar Farm,2024,211.37,10,708160.47,263.23
+2022,Banana,2019,0.59,1,816544.67,346.26
+2022,Banana,2020,118.61,3,797243.81,344.62
+2022,Banana,2021,136.94,5,789515.74,343.81
+2022,Banana,2022,944.15,24,769168.55,339.06
+2022,Banana,2023,45.21,3,797200.0,345.58
+2022,Banana,2024,2.91,1,773590.99,343.89
+2022,Broad Sound Solar Farm,2019,395.71,7,650790.57,438.08
+2022,Broad Sound Solar Farm,2020,520.11,9,627543.43,437.01
+2022,Broad Sound Solar Farm,2021,649.38,16,613465.28,427.59
+2022,Broad Sound Solar Farm,2022,399.53,7,600864.91,432.12
+2022,Broad Sound Solar Farm,2023,198.94,5,627943.17,436.69
+2022,Broad Sound Solar Farm,2024,419.66,8,629720.86,437.83
+2022,Barcaldine Solar Farm,2019,337.65,10,670527.67,338.1
+2022,Barcaldine Solar Farm,2020,405.39,11,656983.27,338.64
+2022,Barcaldine Solar Farm,2021,290.08,5,649293.17,338.66
+2022,Barcaldine Solar Farm,2022,586.52,12,635736.36,336.81
+2022,Barcaldine Solar Farm,2023,5.42,2,646628.82,339.36
+2022,Barcaldine Solar Farm,2024,65.68,5,640546.03,337.37
 2022,Cattle Hill Wind Farm ,2019,91.81,2,1136956.25,422.51
 2022,Cattle Hill Wind Farm ,2020,309.17,5,1023059.36,413.39
 2022,Cattle Hill Wind Farm ,2021,1908.1,34,1055121.0,412.73
@@ -1019,12 +1193,6 @@ base_year,location,data_year,total_deficit_mwh,deficit_hours,total_gen_mwh,avg_s
 2022,Granville Harbour Wind Farm,2022,543.27,15,741588.22,461.56
 2022,Granville Harbour Wind Farm,2023,1064.07,21,747855.98,467.05
 2022,Granville Harbour Wind Farm,2024,606.89,11,747844.37,464.33
-2022,"Huxley Wind Farm, King Island",2019,170.74,4,985496.0,368.0
-2022,"Huxley Wind Farm, King Island",2020,378.31,8,951559.49,364.69
-2022,"Huxley Wind Farm, King Island",2021,455.24,11,976074.08,366.32
-2022,"Huxley Wind Farm, King Island",2022,336.78,9,957307.69,364.04
-2022,"Huxley Wind Farm, King Island",2023,290.71,6,981689.72,371.18
-2022,"Huxley Wind Farm, King Island",2024,1447.3,30,974747.27,363.94
 2022,Musselroe Wind Farm,2019,40.91,1,914490.26,431.64
 2022,Musselroe Wind Farm,2020,1174.1,20,843949.62,418.2
 2022,Musselroe Wind Farm,2021,2223.3,44,870493.85,419.83
@@ -1037,12 +1205,6 @@ base_year,location,data_year,total_deficit_mwh,deficit_hours,total_gen_mwh,avg_s
 2022,Studland Bay Wind Farm ,2022,94.21,4,843938.73,363.33
 2022,Studland Bay Wind Farm ,2023,524.09,9,862420.93,369.18
 2022,Studland Bay Wind Farm ,2024,1330.95,30,859430.73,364.9
-2022,Sample data,2019,139.49,2,775936.98,520.06
-2022,Sample data,2020,1046.86,25,716068.22,500.37
-2022,Sample data,2021,2178.19,41,745921.23,497.71
-2022,Sample data,2022,1064.59,19,707186.48,498.05
-2022,Sample data,2023,662.65,16,754850.82,512.71
-2022,Sample data,2024,456.32,11,755934.79,513.33
 2022,Northern Midland Solar Farm,2019,35.47,1,1135623.07,451.62
 2022,Northern Midland Solar Farm,2020,507.2,10,1034487.13,439.76
 2022,Northern Midland Solar Farm,2021,1443.8,32,1077692.2,440.43
@@ -1097,6 +1259,30 @@ base_year,location,data_year,total_deficit_mwh,deficit_hours,total_gen_mwh,avg_s
 2022,Yoorndoo Ilga Solar,2022,194.84,6,532624.79,454.54
 2022,Yoorndoo Ilga Solar,2023,1466.84,26,551515.45,460.26
 2022,Yoorndoo Ilga Solar,2024,444.02,8,542762.36,458.41
+2022,Roxby Downs Solar Farm,2019,113.46,6,535587.62,558.58
+2022,Roxby Downs Solar Farm,2020,0.0,0,518735.72,560.34
+2022,Roxby Downs Solar Farm,2021,0.0,0,523061.24,558.89
+2022,Roxby Downs Solar Farm,2022,179.95,6,515356.61,550.07
+2022,Roxby Downs Solar Farm,2023,1222.54,26,521597.86,549.42
+2022,Roxby Downs Solar Farm,2024,935.62,19,513585.8,546.77
+2022,S2 Solar,2019,84.06,3,589041.95,541.98
+2022,S2 Solar,2020,211.73,7,566810.98,529.69
+2022,S2 Solar,2021,97.74,3,576754.06,526.92
+2022,S2 Solar,2022,100.95,2,554945.65,529.46
+2022,S2 Solar,2023,1018.5,20,574077.45,530.98
+2022,S2 Solar,2024,1252.21,31,569491.94,522.92
+2022,Streaky Bay Wind Farm,2019,271.45,9,660644.56,429.32
+2022,Streaky Bay Wind Farm,2020,940.93,22,658302.94,427.71
+2022,Streaky Bay Wind Farm,2021,553.13,11,666036.5,432.47
+2022,Streaky Bay Wind Farm,2022,244.29,6,657809.22,432.7
+2022,Streaky Bay Wind Farm,2023,1005.09,28,669391.59,429.19
+2022,Streaky Bay Wind Farm,2024,475.57,11,671916.35,437.56
+2022,Yorke Peninsula Wind Farm,2019,53.97,1,822675.82,333.49
+2022,Yorke Peninsula Wind Farm,2020,439.64,10,810533.29,330.76
+2022,Yorke Peninsula Wind Farm,2021,148.83,9,819274.27,331.94
+2022,Yorke Peninsula Wind Farm,2022,308.04,8,791874.84,330.54
+2022,Yorke Peninsula Wind Farm,2023,360.98,10,829626.72,330.51
+2022,Yorke Peninsula Wind Farm,2024,328.11,8,828154.45,333.69
 2022,Bodangora Wind Farm ,2019,172.33,6,820667.46,361.16
 2022,Bodangora Wind Farm ,2020,331.15,11,777311.92,358.35
 2022,Bodangora Wind Farm ,2021,620.34,11,788445.55,357.95
@@ -1127,12 +1313,6 @@ base_year,location,data_year,total_deficit_mwh,deficit_hours,total_gen_mwh,avg_s
 2022,Sunraysia Solar Farm,2022,269.3,8,735025.92,394.9
 2022,Sunraysia Solar Farm,2023,675.0,12,773906.35,398.33
 2022,Sunraysia Solar Farm,2024,1343.16,30,773482.16,393.29
-2022,Hunter Coast Offshore Wind Project (proposed) ,2019,111.7,4,765777.27,460.29
-2022,Hunter Coast Offshore Wind Project (proposed) ,2020,277.57,5,732422.99,460.94
-2022,Hunter Coast Offshore Wind Project (proposed) ,2021,380.02,5,734357.3,459.09
-2022,Hunter Coast Offshore Wind Project (proposed) ,2022,274.64,6,718562.07,453.02
-2022,Hunter Coast Offshore Wind Project (proposed) ,2023,90.56,2,772228.96,465.54
-2022,Hunter Coast Offshore Wind Project (proposed) ,2024,473.36,10,725623.78,455.83
 2022,Muswellbrook Solar Farm ,2019,612.7,14,929009.38,373.77
 2022,Muswellbrook Solar Farm ,2020,92.7,8,877978.76,372.75
 2022,Muswellbrook Solar Farm ,2021,245.53,6,888478.18,375.7
@@ -1145,30 +1325,54 @@ base_year,location,data_year,total_deficit_mwh,deficit_hours,total_gen_mwh,avg_s
 2022,Wollongong Offshore Wind Project (proposed),2022,211.97,5,808852.7,372.93
 2022,Wollongong Offshore Wind Project (proposed),2023,684.44,14,853887.85,378.44
 2022,Wollongong Offshore Wind Project (proposed),2024,1678.96,26,816032.01,372.04
-2022,Shoalhaven Solar Farm ,2019,745.31,14,749906.55,385.01
-2022,Shoalhaven Solar Farm ,2020,616.06,9,717627.15,379.95
-2022,Shoalhaven Solar Farm ,2021,1296.3,25,731545.02,382.43
-2022,Shoalhaven Solar Farm ,2022,284.97,8,720622.75,375.97
-2022,Shoalhaven Solar Farm ,2023,519.83,8,746511.79,386.89
-2022,Shoalhaven Solar Farm ,2024,1915.14,33,705887.26,376.02
+2022,Broken Hill Solar Farm,2019,250.49,4,639364.16,406.39
+2022,Broken Hill Solar Farm,2020,269.39,6,625056.89,405.64
+2022,Broken Hill Solar Farm,2021,253.7,8,623385.02,400.95
+2022,Broken Hill Solar Farm,2022,154.98,4,601341.0,400.5
+2022,Broken Hill Solar Farm,2023,1467.71,26,623706.34,403.69
+2022,Broken Hill Solar Farm,2024,520.61,15,615276.42,399.94
+2022,Wagga Wagga North Solar Farm,2019,562.59,11,825776.92,532.92
+2022,Wagga Wagga North Solar Farm,2020,955.14,20,781353.25,521.15
+2022,Wagga Wagga North Solar Farm,2021,1238.67,24,785483.77,521.86
+2022,Wagga Wagga North Solar Farm,2022,544.63,12,759605.85,517.05
+2022,Wagga Wagga North Solar Farm,2023,922.44,18,791715.96,521.99
+2022,Wagga Wagga North Solar Farm,2024,507.58,13,804905.38,523.8
+2022,Cooma Solar Farm,2019,332.63,6,800064.6,433.61
+2022,Cooma Solar Farm,2020,1565.37,35,763327.66,424.32
+2022,Cooma Solar Farm,2021,1026.32,18,762384.04,427.08
+2022,Cooma Solar Farm,2022,265.05,8,730322.0,425.22
+2022,Cooma Solar Farm,2023,541.41,10,759561.62,429.7
+2022,Cooma Solar Farm,2024,1506.77,31,742755.03,423.2
+2022,N13,2019,219.75,3,627511.79,428.7
+2022,N13,2020,898.65,19,597975.76,420.59
+2022,N13,2021,887.9,20,599848.69,422.57
+2022,N13,2022,227.66,5,577582.54,420.83
+2022,N13,2023,1019.38,15,614510.11,426.14
+2022,N13,2024,2450.11,46,590558.11,411.45
+2022,Moree Solar Farm,2019,0.0,0,790776.98,580.66
+2022,Moree Solar Farm,2020,352.3,9,739377.99,574.7
+2022,Moree Solar Farm,2021,404.93,7,743667.71,574.66
+2022,Moree Solar Farm,2022,327.98,8,729227.34,566.87
+2022,Moree Solar Farm,2023,0.0,0,782410.0,583.13
+2022,Moree Solar Farm,2024,0.0,0,727183.05,576.4
+2022,Snowy Wind,2019,94.9,1,860918.28,553.18
+2022,Snowy Wind,2020,761.21,19,812671.68,544.69
+2022,Snowy Wind,2021,766.55,13,810536.4,542.88
+2022,Snowy Wind,2022,466.2,11,789001.74,540.28
+2022,Snowy Wind,2023,1188.87,18,804464.34,542.12
+2022,Snowy Wind,2024,402.04,9,830737.13,545.69
+2022,N10 Offshore,2019,205.41,5,747675.05,428.48
+2022,N10 Offshore,2020,158.78,2,714923.59,428.4
+2022,N10 Offshore,2021,482.49,8,718365.81,426.92
+2022,N10 Offshore,2022,474.27,9,709186.76,425.48
+2022,N10 Offshore,2023,0.0,0,750555.93,433.73
+2022,N10 Offshore,2024,227.27,5,705286.72,425.79
 2023,Gippsland offshore wind,2019,154.74,4,644781.64,513.73
 2023,Gippsland offshore wind,2020,2078.13,47,604729.0,487.33
 2023,Gippsland offshore wind,2021,2281.59,42,632218.92,492.04
 2023,Gippsland offshore wind,2022,2849.06,53,610172.98,488.64
 2023,Gippsland offshore wind,2023,825.8,17,626560.24,504.01
 2023,Gippsland offshore wind,2024,2682.46,62,639839.28,488.11
-2023,Hazelwood North Solar Farm,2019,375.54,10,794570.22,375.98
-2023,Hazelwood North Solar Farm,2020,1143.88,30,746966.72,367.09
-2023,Hazelwood North Solar Farm,2021,847.46,18,767377.23,372.77
-2023,Hazelwood North Solar Farm,2022,1369.23,24,729746.34,365.94
-2023,Hazelwood North Solar Farm,2023,647.21,14,762791.27,373.34
-2023,Hazelwood North Solar Farm,2024,789.69,13,781298.43,370.88
-2023,Glenrowan solar farm,2019,144.01,3,850537.32,778.56
-2023,Glenrowan solar farm,2020,31.96,2,819510.29,769.88
-2023,Glenrowan solar farm,2021,968.88,21,808841.79,753.28
-2023,Glenrowan solar farm,2022,1050.35,22,771455.0,753.9
-2023,Glenrowan solar farm,2023,467.63,7,796655.0,761.71
-2023,Glenrowan solar farm,2024,0.0,0,845469.34,770.68
 2023,Hawkesdale wind farm,2019,185.53,5,803815.51,398.09
 2023,Hawkesdale wind farm,2020,1453.69,36,774767.7,391.77
 2023,Hawkesdale wind farm,2021,418.32,7,799457.9,399.51
@@ -1217,6 +1421,18 @@ base_year,location,data_year,total_deficit_mwh,deficit_hours,total_gen_mwh,avg_s
 2023,Meering West Wind Farm,2022,952.94,22,698949.4,435.87
 2023,Meering West Wind Farm,2023,266.98,6,721570.56,442.58
 2023,Meering West Wind Farm,2024,1801.16,42,727570.39,438.15
+2023,Cosgrove Solar Farm,2019,477.7,12,739384.4,498.67
+2023,Cosgrove Solar Farm,2020,388.34,7,719136.08,495.47
+2023,Cosgrove Solar Farm,2021,1711.41,35,719155.4,486.21
+2023,Cosgrove Solar Farm,2022,2025.74,41,677636.09,476.19
+2023,Cosgrove Solar Farm,2023,759.17,12,709748.99,494.71
+2023,Cosgrove Solar Farm,2024,1693.58,34,737925.16,488.63
+2023,V9 Offshore,2019,443.54,10,851225.0,334.56
+2023,V9 Offshore,2020,1223.89,34,837004.11,328.16
+2023,V9 Offshore,2021,266.94,10,847884.53,336.74
+2023,V9 Offshore,2022,718.14,19,818678.86,331.7
+2023,V9 Offshore,2023,1248.24,25,847742.66,334.78
+2023,V9 Offshore,2024,1689.34,36,833485.77,331.16
 2023,Coopers Gap ,2019,478.79,15,635649.09,345.93
 2023,Coopers Gap ,2020,240.45,8,614590.69,344.78
 2023,Coopers Gap ,2021,1159.47,18,608035.53,342.49
@@ -1241,12 +1457,12 @@ base_year,location,data_year,total_deficit_mwh,deficit_hours,total_gen_mwh,avg_s
 2023,Kaban,2022,457.01,22,645517.34,266.18
 2023,Kaban,2023,91.0,8,658016.18,266.06
 2023,Kaban,2024,211.61,8,650555.97,268.69
-2023,Sample data,2019,332.2,7,749330.79,464.3
-2023,Sample data,2020,2671.19,55,687018.7,440.87
-2023,Sample data,2021,3575.28,65,712019.23,447.5
-2023,Sample data,2022,3037.31,61,671861.88,440.63
-2023,Sample data,2023,817.07,16,720708.23,463.16
-2023,Sample data,2024,1323.26,30,713889.57,450.38
+2023,Sample data,2019,239.26,8,599120.49,342.67
+2023,Sample data,2020,562.28,15,586750.48,342.17
+2023,Sample data,2021,991.72,22,574983.86,339.05
+2023,Sample data,2022,2183.39,35,567121.42,334.9
+2023,Sample data,2023,242.38,6,586964.01,343.39
+2023,Sample data,2024,64.88,2,576680.99,341.39
 2023,Kennedy Energy Park Stage 1,2019,163.07,15,682256.43,241.25
 2023,Kennedy Energy Park Stage 1,2020,496.45,21,679665.36,240.01
 2023,Kennedy Energy Park Stage 1,2021,78.91,11,660231.6,241.26
@@ -1271,12 +1487,6 @@ base_year,location,data_year,total_deficit_mwh,deficit_hours,total_gen_mwh,avg_s
 2023,Kidston Solar Project KS1,2022,714.98,25,624666.68,256.3
 2023,Kidston Solar Project KS1,2023,191.26,10,632401.79,258.64
 2023,Kidston Solar Project KS1,2024,255.55,8,625570.42,258.52
-2023,Emerald Solar Farm,2019,52.72,4,587724.26,325.53
-2023,Emerald Solar Farm,2020,629.62,16,576167.18,320.3
-2023,Emerald Solar Farm,2021,1104.5,21,571196.39,320.54
-2023,Emerald Solar Farm,2022,2566.6,52,557367.8,314.77
-2023,Emerald Solar Farm,2023,298.51,9,573384.84,321.52
-2023,Emerald Solar Farm,2024,1245.23,29,562904.69,318.0
 2023,Ross River Solar Farm ,2019,711.63,27,588499.06,263.68
 2023,Ross River Solar Farm ,2020,406.88,21,583192.15,262.45
 2023,Ross River Solar Farm ,2021,1260.53,43,561354.64,258.44
@@ -1295,6 +1505,24 @@ base_year,location,data_year,total_deficit_mwh,deficit_hours,total_gen_mwh,avg_s
 2023,Haughton Solar Farm,2022,663.15,19,596061.65,274.1
 2023,Haughton Solar Farm,2023,92.99,8,613792.16,275.6
 2023,Haughton Solar Farm,2024,301.36,11,603834.37,276.03
+2023,Banana,2019,98.49,3,516376.44,523.48
+2023,Banana,2020,370.42,5,500928.15,516.6
+2023,Banana,2021,911.47,16,497358.04,514.07
+2023,Banana,2022,2301.26,42,486539.05,501.06
+2023,Banana,2023,131.48,5,498287.77,516.18
+2023,Banana,2024,776.03,18,486766.6,507.61
+2023,Broad Sound Solar Farm,2019,485.59,14,549310.92,323.83
+2023,Broad Sound Solar Farm,2020,1502.46,35,541978.44,322.26
+2023,Broad Sound Solar Farm,2021,1115.39,28,533152.82,319.28
+2023,Broad Sound Solar Farm,2022,2696.7,47,525086.35,317.52
+2023,Broad Sound Solar Farm,2023,197.21,11,542918.23,324.89
+2023,Broad Sound Solar Farm,2024,588.84,18,539000.43,323.84
+2023,Barcaldine Solar Farm,2019,503.4,15,640510.07,311.42
+2023,Barcaldine Solar Farm,2020,445.04,11,629922.76,312.14
+2023,Barcaldine Solar Farm,2021,376.59,9,623940.77,311.82
+2023,Barcaldine Solar Farm,2022,1073.6,21,609715.7,308.58
+2023,Barcaldine Solar Farm,2023,41.7,6,623666.14,312.02
+2023,Barcaldine Solar Farm,2024,213.61,9,613578.94,311.04
 2023,Cattle Hill Wind Farm ,2019,38.67,1,805208.19,538.29
 2023,Cattle Hill Wind Farm ,2020,1979.38,47,728141.95,510.37
 2023,Cattle Hill Wind Farm ,2021,3443.72,66,750265.53,514.94
@@ -1307,12 +1535,6 @@ base_year,location,data_year,total_deficit_mwh,deficit_hours,total_gen_mwh,avg_s
 2023,Granville Harbour Wind Farm,2022,1098.79,31,844893.38,326.65
 2023,Granville Harbour Wind Farm,2023,1035.68,23,857122.87,331.71
 2023,Granville Harbour Wind Farm,2024,962.21,28,856544.47,327.99
-2023,"Huxley Wind Farm, King Island",2019,1355.08,23,799864.94,313.39
-2023,"Huxley Wind Farm, King Island",2020,1985.06,47,774025.38,305.68
-2023,"Huxley Wind Farm, King Island",2021,1625.01,46,792004.68,308.64
-2023,"Huxley Wind Farm, King Island",2022,2336.17,54,775746.19,305.48
-2023,"Huxley Wind Farm, King Island",2023,558.6,13,795857.28,314.86
-2023,"Huxley Wind Farm, King Island",2024,3439.03,71,785236.59,306.71
 2023,Musselroe Wind Farm,2019,132.16,5,696506.37,518.33
 2023,Musselroe Wind Farm,2020,2933.19,64,643482.04,490.58
 2023,Musselroe Wind Farm,2021,4076.62,77,662794.27,500.06
@@ -1325,12 +1547,6 @@ base_year,location,data_year,total_deficit_mwh,deficit_hours,total_gen_mwh,avg_s
 2023,Studland Bay Wind Farm ,2022,690.53,19,717388.66,371.15
 2023,Studland Bay Wind Farm ,2023,686.48,14,731993.11,380.78
 2023,Studland Bay Wind Farm ,2024,1513.03,32,730721.48,376.08
-2023,Sample data,2019,332.2,7,749330.79,464.3
-2023,Sample data,2020,2671.19,55,687018.7,440.87
-2023,Sample data,2021,3575.28,65,712019.23,447.5
-2023,Sample data,2022,3037.31,61,671861.88,440.63
-2023,Sample data,2023,817.07,16,720708.23,463.16
-2023,Sample data,2024,1323.26,30,713889.57,450.38
 2023,Northern Midland Solar Farm,2019,111.53,2,877077.31,451.9
 2023,Northern Midland Solar Farm,2020,2183.99,42,798998.71,431.93
 2023,Northern Midland Solar Farm,2021,2964.05,55,832344.77,436.06
@@ -1385,6 +1601,30 @@ base_year,location,data_year,total_deficit_mwh,deficit_hours,total_gen_mwh,avg_s
 2023,Yoorndoo Ilga Solar,2022,476.4,12,712935.58,296.63
 2023,Yoorndoo Ilga Solar,2023,748.69,18,735908.35,298.04
 2023,Yoorndoo Ilga Solar,2024,658.3,19,723899.97,297.17
+2023,Roxby Downs Solar Farm,2019,346.64,10,704957.76,327.34
+2023,Roxby Downs Solar Farm,2020,18.36,1,682894.02,327.48
+2023,Roxby Downs Solar Farm,2021,88.31,2,688682.34,326.77
+2023,Roxby Downs Solar Farm,2022,676.35,17,678633.74,324.64
+2023,Roxby Downs Solar Farm,2023,901.14,17,685817.25,323.6
+2023,Roxby Downs Solar Farm,2024,1296.21,28,676003.71,322.77
+2023,S2 Solar,2019,73.67,2,625345.81,442.88
+2023,S2 Solar,2020,217.81,6,601489.59,433.45
+2023,S2 Solar,2021,189.91,4,612176.48,432.76
+2023,S2 Solar,2022,380.49,7,588851.31,434.22
+2023,S2 Solar,2023,1181.93,20,609472.79,435.25
+2023,S2 Solar,2024,1295.81,31,604681.42,429.69
+2023,Streaky Bay Wind Farm,2019,263.44,6,739832.2,333.64
+2023,Streaky Bay Wind Farm,2020,503.67,14,741044.81,331.66
+2023,Streaky Bay Wind Farm,2021,476.29,13,748884.53,334.31
+2023,Streaky Bay Wind Farm,2022,424.75,9,738615.06,333.52
+2023,Streaky Bay Wind Farm,2023,800.08,19,749847.65,331.85
+2023,Streaky Bay Wind Farm,2024,585.36,13,751127.53,336.61
+2023,Yorke Peninsula Wind Farm,2019,189.79,5,806015.88,341.4
+2023,Yorke Peninsula Wind Farm,2020,527.3,10,802017.16,338.52
+2023,Yorke Peninsula Wind Farm,2021,298.94,8,806443.23,340.19
+2023,Yorke Peninsula Wind Farm,2022,493.48,14,786124.05,338.5
+2023,Yorke Peninsula Wind Farm,2023,353.27,8,817038.08,336.43
+2023,Yorke Peninsula Wind Farm,2024,469.36,10,807047.1,340.94
 2023,Bodangora Wind Farm ,2019,270.51,6,768538.22,485.31
 2023,Bodangora Wind Farm ,2020,575.81,13,757685.48,483.46
 2023,Bodangora Wind Farm ,2021,66.98,1,751370.17,485.21
@@ -1415,12 +1655,6 @@ base_year,location,data_year,total_deficit_mwh,deficit_hours,total_gen_mwh,avg_s
 2023,Sunraysia Solar Farm,2022,453.76,14,680916.05,429.77
 2023,Sunraysia Solar Farm,2023,557.56,11,708833.05,435.22
 2023,Sunraysia Solar Farm,2024,1742.83,41,707803.33,429.77
-2023,Hunter Coast Offshore Wind Project (proposed) ,2019,636.99,12,698023.44,400.16
-2023,Hunter Coast Offshore Wind Project (proposed) ,2020,757.17,15,663780.77,396.6
-2023,Hunter Coast Offshore Wind Project (proposed) ,2021,1339.7,25,664894.14,397.35
-2023,Hunter Coast Offshore Wind Project (proposed) ,2022,1475.23,27,648253.64,386.69
-2023,Hunter Coast Offshore Wind Project (proposed) ,2023,334.77,6,709086.29,407.88
-2023,Hunter Coast Offshore Wind Project (proposed) ,2024,1735.59,32,660241.38,393.7
 2023,Muswellbrook Solar Farm ,2019,1906.7,33,611758.78,440.5
 2023,Muswellbrook Solar Farm ,2020,1952.68,40,574944.23,429.1
 2023,Muswellbrook Solar Farm ,2021,1516.69,31,582902.89,430.36
@@ -1433,30 +1667,54 @@ base_year,location,data_year,total_deficit_mwh,deficit_hours,total_gen_mwh,avg_s
 2023,Wollongong Offshore Wind Project (proposed),2022,729.57,17,784098.83,454.98
 2023,Wollongong Offshore Wind Project (proposed),2023,283.2,7,848949.7,469.01
 2023,Wollongong Offshore Wind Project (proposed),2024,2097.25,32,801878.79,455.38
-2023,Shoalhaven Solar Farm ,2019,785.26,19,726202.1,443.33
-2023,Shoalhaven Solar Farm ,2020,997.95,19,680708.65,436.42
-2023,Shoalhaven Solar Farm ,2021,1374.51,24,701064.87,438.73
-2023,Shoalhaven Solar Farm ,2022,1046.57,21,675569.65,428.84
-2023,Shoalhaven Solar Farm ,2023,363.56,6,724026.81,448.91
-2023,Shoalhaven Solar Farm ,2024,3063.62,53,676579.16,428.89
+2023,Broken Hill Solar Farm,2019,153.96,2,616028.31,485.24
+2023,Broken Hill Solar Farm,2020,42.27,1,604352.2,485.16
+2023,Broken Hill Solar Farm,2021,209.62,8,602650.4,476.36
+2023,Broken Hill Solar Farm,2022,88.77,2,581825.58,478.88
+2023,Broken Hill Solar Farm,2023,1190.85,21,598871.37,482.06
+2023,Broken Hill Solar Farm,2024,396.74,11,593565.59,476.93
+2023,Wagga Wagga North Solar Farm,2019,526.16,12,854545.4,496.89
+2023,Wagga Wagga North Solar Farm,2020,872.58,18,814128.03,489.03
+2023,Wagga Wagga North Solar Farm,2021,992.64,20,814864.8,489.55
+2023,Wagga Wagga North Solar Farm,2022,598.13,13,794382.02,484.63
+2023,Wagga Wagga North Solar Farm,2023,793.21,14,817120.79,489.96
+2023,Wagga Wagga North Solar Farm,2024,645.15,14,828452.19,489.75
+2023,Cooma Solar Farm,2019,31.25,1,682893.26,560.84
+2023,Cooma Solar Farm,2020,1537.47,30,647024.28,548.26
+2023,Cooma Solar Farm,2021,731.87,13,648753.96,549.64
+2023,Cooma Solar Farm,2022,684.26,13,621366.45,546.04
+2023,Cooma Solar Farm,2023,192.5,5,648742.82,553.94
+2023,Cooma Solar Farm,2024,2031.46,40,636783.21,540.54
+2023,N13,2019,258.86,10,747973.87,332.73
+2023,N13,2020,579.3,16,713455.7,328.54
+2023,N13,2021,633.39,14,714268.45,328.86
+2023,N13,2022,380.19,9,691556.53,329.55
+2023,N13,2023,844.35,13,729358.05,331.43
+2023,N13,2024,1759.62,37,701638.25,322.62
+2023,Moree Solar Farm,2019,815.77,22,629387.0,331.92
+2023,Moree Solar Farm,2020,1397.71,36,594500.54,323.96
+2023,Moree Solar Farm,2021,1646.51,38,595735.69,324.49
+2023,Moree Solar Farm,2022,2803.93,58,586605.59,320.78
+2023,Moree Solar Farm,2023,304.29,9,612464.05,332.25
+2023,Moree Solar Farm,2024,900.7,22,574689.06,319.91
+2023,Snowy Wind,2019,539.62,9,755649.36,452.02
+2023,Snowy Wind,2020,1477.23,30,721723.64,444.0
+2023,Snowy Wind,2021,1475.47,23,713399.01,442.6
+2023,Snowy Wind,2022,1837.94,33,702813.52,438.79
+2023,Snowy Wind,2023,1570.82,22,701627.89,441.54
+2023,Snowy Wind,2024,1490.15,30,722685.42,444.65
+2023,N10 Offshore,2019,646.15,20,756414.1,333.96
+2023,N10 Offshore,2020,545.1,21,732312.43,334.61
+2023,N10 Offshore,2021,1186.48,26,736988.85,333.73
+2023,N10 Offshore,2022,954.56,27,729668.64,332.62
+2023,N10 Offshore,2023,87.99,8,752911.87,339.0
+2023,N10 Offshore,2024,681.91,16,716129.9,332.98
 2024,Gippsland offshore wind,2019,0.0,0,797701.25,524.12
 2024,Gippsland offshore wind,2020,274.9,11,753386.13,513.11
 2024,Gippsland offshore wind,2021,183.51,3,786987.83,517.63
 2024,Gippsland offshore wind,2022,1048.83,21,755779.64,511.03
 2024,Gippsland offshore wind,2023,821.57,14,774165.33,522.64
 2024,Gippsland offshore wind,2024,366.41,11,776175.69,512.24
-2024,Hazelwood North Solar Farm,2019,98.43,2,749664.02,539.8
-2024,Hazelwood North Solar Farm,2020,732.67,17,704527.17,529.31
-2024,Hazelwood North Solar Farm,2021,250.06,4,722354.53,534.46
-2024,Hazelwood North Solar Farm,2022,903.6,18,685034.42,525.35
-2024,Hazelwood North Solar Farm,2023,519.9,10,716903.36,537.95
-2024,Hazelwood North Solar Farm,2024,392.75,10,729528.73,529.93
-2024,Glenrowan solar farm,2019,96.81,2,891452.43,508.12
-2024,Glenrowan solar farm,2020,1081.09,21,854706.14,497.08
-2024,Glenrowan solar farm,2021,3376.47,66,850823.96,484.32
-2024,Glenrowan solar farm,2022,3471.64,67,812373.57,482.4
-2024,Glenrowan solar farm,2023,2044.61,39,853178.07,489.53
-2024,Glenrowan solar farm,2024,35.92,4,903062.84,499.1
 2024,Hawkesdale wind farm,2019,239.81,6,856593.29,353.94
 2024,Hawkesdale wind farm,2020,1417.81,35,824958.95,349.16
 2024,Hawkesdale wind farm,2021,493.37,9,852055.97,354.58
@@ -1505,6 +1763,18 @@ base_year,location,data_year,total_deficit_mwh,deficit_hours,total_gen_mwh,avg_s
 2024,Meering West Wind Farm,2022,387.53,16,716332.69,546.27
 2024,Meering West Wind Farm,2023,518.86,10,754900.64,554.02
 2024,Meering West Wind Farm,2024,341.5,9,766020.69,550.29
+2024,Cosgrove Solar Farm,2019,0.0,0,789402.45,643.16
+2024,Cosgrove Solar Farm,2020,28.64,1,761139.08,635.78
+2024,Cosgrove Solar Farm,2021,1828.08,40,766592.88,620.89
+2024,Cosgrove Solar Farm,2022,2404.87,52,725438.49,604.52
+2024,Cosgrove Solar Farm,2023,842.14,15,768864.91,627.96
+2024,Cosgrove Solar Farm,2024,222.39,8,797564.37,628.68
+2024,V9 Offshore,2019,566.85,14,811060.08,417.92
+2024,V9 Offshore,2020,895.9,25,796461.72,412.58
+2024,V9 Offshore,2021,560.3,10,807184.95,422.41
+2024,V9 Offshore,2022,1636.3,36,777878.88,411.32
+2024,V9 Offshore,2023,1350.25,27,809793.68,418.32
+2024,V9 Offshore,2024,867.51,18,809579.55,417.26
 2024,Coopers Gap ,2019,379.0,13,697245.04,342.27
 2024,Coopers Gap ,2020,14.13,4,675403.78,342.88
 2024,Coopers Gap ,2021,903.87,17,668449.35,340.69
@@ -1529,12 +1799,12 @@ base_year,location,data_year,total_deficit_mwh,deficit_hours,total_gen_mwh,avg_s
 2024,Kaban,2022,844.46,24,546343.23,283.94
 2024,Kaban,2023,860.17,26,570009.96,284.63
 2024,Kaban,2024,276.33,9,562140.59,287.1
-2024,Sample data,2019,139.61,3,777149.29,545.92
-2024,Sample data,2020,1158.28,28,714102.36,522.9
-2024,Sample data,2021,2407.33,45,741375.2,524.53
-2024,Sample data,2022,1640.36,31,700692.73,523.18
-2024,Sample data,2023,569.18,13,750363.74,541.09
-2024,Sample data,2024,155.69,6,746053.24,534.65
+2024,Sample data,2019,275.02,7,574795.34,349.54
+2024,Sample data,2020,589.18,13,562528.63,348.99
+2024,Sample data,2021,1125.51,23,551214.77,345.35
+2024,Sample data,2022,2280.28,36,543902.89,341.07
+2024,Sample data,2023,327.03,6,562546.6,350.35
+2024,Sample data,2024,85.51,3,553147.59,347.23
 2024,Kennedy Energy Park Stage 1,2019,35.01,7,715745.81,248.91
 2024,Kennedy Energy Park Stage 1,2020,356.27,12,712468.44,247.61
 2024,Kennedy Energy Park Stage 1,2021,53.71,8,691762.64,248.8
@@ -1559,12 +1829,6 @@ base_year,location,data_year,total_deficit_mwh,deficit_hours,total_gen_mwh,avg_s
 2024,Kidston Solar Project KS1,2022,562.47,16,595369.56,283.35
 2024,Kidston Solar Project KS1,2023,424.85,15,608467.69,284.79
 2024,Kidston Solar Project KS1,2024,86.16,3,601774.45,285.01
-2024,Emerald Solar Farm,2019,128.99,5,662786.21,331.99
-2024,Emerald Solar Farm,2020,572.93,12,643856.34,328.71
-2024,Emerald Solar Farm,2021,897.48,16,638476.26,327.46
-2024,Emerald Solar Farm,2022,1391.11,30,622710.57,324.38
-2024,Emerald Solar Farm,2023,295.64,6,635819.53,329.1
-2024,Emerald Solar Farm,2024,391.79,10,634678.19,327.28
 2024,Ross River Solar Farm ,2019,1684.91,46,619050.52,258.88
 2024,Ross River Solar Farm ,2020,543.99,25,617472.72,261.27
 2024,Ross River Solar Farm ,2021,1328.88,47,595753.03,256.77
@@ -1583,6 +1847,24 @@ base_year,location,data_year,total_deficit_mwh,deficit_hours,total_gen_mwh,avg_s
 2024,Haughton Solar Farm,2022,1997.33,56,588157.36,269.26
 2024,Haughton Solar Farm,2023,701.34,20,597017.52,273.43
 2024,Haughton Solar Farm,2024,206.45,11,586735.86,273.1
+2024,Banana,2019,98.77,4,670272.46,342.12
+2024,Banana,2020,438.76,12,654794.78,339.42
+2024,Banana,2021,507.56,9,648302.54,337.99
+2024,Banana,2022,1989.45,44,631369.23,331.3
+2024,Banana,2023,229.91,6,655053.5,340.09
+2024,Banana,2024,126.11,4,635289.22,336.28
+2024,Broad Sound Solar Farm,2019,171.65,4,637530.22,330.54
+2024,Broad Sound Solar Farm,2020,956.04,23,629342.01,328.01
+2024,Broad Sound Solar Farm,2021,506.94,18,619179.08,327.66
+2024,Broad Sound Solar Farm,2022,2067.62,39,609884.41,324.59
+2024,Broad Sound Solar Farm,2023,14.86,4,630448.51,331.45
+2024,Broad Sound Solar Farm,2024,58.42,4,625759.61,330.25
+2024,Barcaldine Solar Farm,2019,759.4,22,602857.02,290.26
+2024,Barcaldine Solar Farm,2020,751.0,18,594751.79,290.92
+2024,Barcaldine Solar Farm,2021,620.74,18,590200.4,291.08
+2024,Barcaldine Solar Farm,2022,1919.51,47,575802.77,284.94
+2024,Barcaldine Solar Farm,2023,493.62,13,591738.08,290.82
+2024,Barcaldine Solar Farm,2024,375.98,18,578860.52,290.4
 2024,Cattle Hill Wind Farm ,2019,0.0,0,855808.01,535.56
 2024,Cattle Hill Wind Farm ,2020,799.9,19,781394.89,512.64
 2024,Cattle Hill Wind Farm ,2021,2759.8,49,803693.98,514.57
@@ -1595,12 +1877,6 @@ base_year,location,data_year,total_deficit_mwh,deficit_hours,total_gen_mwh,avg_s
 2024,Granville Harbour Wind Farm,2022,1058.58,25,700736.82,485.56
 2024,Granville Harbour Wind Farm,2023,1700.23,36,699560.79,485.66
 2024,Granville Harbour Wind Farm,2024,494.95,8,700338.21,491.85
-2024,"Huxley Wind Farm, King Island",2019,0.0,0,775504.09,783.58
-2024,"Huxley Wind Farm, King Island",2020,0.0,0,749625.95,773.65
-2024,"Huxley Wind Farm, King Island",2021,81.24,6,767986.41,772.45
-2024,"Huxley Wind Farm, King Island",2022,306.76,7,752720.48,768.81
-2024,"Huxley Wind Farm, King Island",2023,83.16,2,772063.24,787.27
-2024,"Huxley Wind Farm, King Island",2024,349.38,10,764180.77,769.23
 2024,Musselroe Wind Farm,2019,65.76,2,778569.48,475.52
 2024,Musselroe Wind Farm,2020,1989.11,43,717957.59,455.27
 2024,Musselroe Wind Farm,2021,2939.46,56,741272.98,459.58
@@ -1613,12 +1889,6 @@ base_year,location,data_year,total_deficit_mwh,deficit_hours,total_gen_mwh,avg_s
 2024,Studland Bay Wind Farm ,2022,680.11,12,771420.53,444.21
 2024,Studland Bay Wind Farm ,2023,362.9,8,782884.21,450.67
 2024,Studland Bay Wind Farm ,2024,323.39,9,786385.73,447.71
-2024,Sample data,2019,139.61,3,777149.29,545.92
-2024,Sample data,2020,1158.28,28,714102.36,522.9
-2024,Sample data,2021,2407.33,45,741375.2,524.53
-2024,Sample data,2022,1640.36,31,700692.73,523.18
-2024,Sample data,2023,569.18,13,750363.74,541.09
-2024,Sample data,2024,155.69,6,746053.24,534.65
 2024,Northern Midland Solar Farm,2019,77.11,1,845812.54,511.78
 2024,Northern Midland Solar Farm,2020,2114.41,41,769351.68,489.01
 2024,Northern Midland Solar Farm,2021,2746.62,48,802334.83,494.67
@@ -1673,6 +1943,30 @@ base_year,location,data_year,total_deficit_mwh,deficit_hours,total_gen_mwh,avg_s
 2024,Yoorndoo Ilga Solar,2022,30.66,1,504523.54,581.7
 2024,Yoorndoo Ilga Solar,2023,1616.3,27,522973.56,588.15
 2024,Yoorndoo Ilga Solar,2024,67.25,2,514752.49,583.63
+2024,Roxby Downs Solar Farm,2019,0.0,0,780332.49,437.03
+2024,Roxby Downs Solar Farm,2020,0.0,0,756153.47,437.94
+2024,Roxby Downs Solar Farm,2021,0.0,0,762758.0,437.13
+2024,Roxby Downs Solar Farm,2022,167.69,5,751827.25,434.82
+2024,Roxby Downs Solar Farm,2023,464.83,9,757634.76,433.28
+2024,Roxby Downs Solar Farm,2024,464.36,11,748294.0,432.88
+2024,S2 Solar,2019,0.0,0,747930.06,445.43
+2024,S2 Solar,2020,48.51,2,716601.71,440.08
+2024,S2 Solar,2021,0.05,1,730819.13,441.01
+2024,S2 Solar,2022,147.32,3,701029.36,440.03
+2024,S2 Solar,2023,889.87,17,729096.37,439.7
+2024,S2 Solar,2024,228.79,7,724206.88,436.41
+2024,Streaky Bay Wind Farm,2019,955.05,26,608206.26,347.36
+2024,Streaky Bay Wind Farm,2020,1377.85,34,611477.47,345.5
+2024,Streaky Bay Wind Farm,2021,1058.67,30,617435.6,348.43
+2024,Streaky Bay Wind Farm,2022,1062.33,30,608366.91,347.67
+2024,Streaky Bay Wind Farm,2023,1649.45,40,616570.28,345.19
+2024,Streaky Bay Wind Farm,2024,800.68,19,616704.69,353.26
+2024,Yorke Peninsula Wind Farm,2019,116.88,5,689920.61,423.7
+2024,Yorke Peninsula Wind Farm,2020,764.52,22,673122.14,418.36
+2024,Yorke Peninsula Wind Farm,2021,705.33,23,683918.54,425.19
+2024,Yorke Peninsula Wind Farm,2022,894.18,27,655474.81,419.11
+2024,Yorke Peninsula Wind Farm,2023,735.23,14,692221.78,419.62
+2024,Yorke Peninsula Wind Farm,2024,227.32,7,698147.44,429.56
 2024,Bodangora Wind Farm ,2019,29.73,5,942796.33,354.51
 2024,Bodangora Wind Farm ,2020,114.56,4,883279.56,351.44
 2024,Bodangora Wind Farm ,2021,715.88,12,901534.1,351.11
@@ -1703,12 +1997,6 @@ base_year,location,data_year,total_deficit_mwh,deficit_hours,total_gen_mwh,avg_s
 2024,Sunraysia Solar Farm,2022,0.0,0,802877.69,504.23
 2024,Sunraysia Solar Farm,2023,556.67,10,854499.57,506.6
 2024,Sunraysia Solar Farm,2024,338.7,9,854755.6,501.74
-2024,Hunter Coast Offshore Wind Project (proposed) ,2019,240.98,6,678888.64,560.84
-2024,Hunter Coast Offshore Wind Project (proposed) ,2020,98.1,2,663039.16,564.24
-2024,Hunter Coast Offshore Wind Project (proposed) ,2021,366.72,8,667076.06,561.3
-2024,Hunter Coast Offshore Wind Project (proposed) ,2022,712.92,18,661087.57,553.15
-2024,Hunter Coast Offshore Wind Project (proposed) ,2023,229.63,5,666090.61,566.91
-2024,Hunter Coast Offshore Wind Project (proposed) ,2024,38.65,3,647512.28,557.89
 2024,Muswellbrook Solar Farm ,2019,581.74,11,797066.77,514.68
 2024,Muswellbrook Solar Farm ,2020,130.76,5,755489.8,512.77
 2024,Muswellbrook Solar Farm ,2021,118.8,2,763780.19,515.37
@@ -1721,9 +2009,45 @@ base_year,location,data_year,total_deficit_mwh,deficit_hours,total_gen_mwh,avg_s
 2024,Wollongong Offshore Wind Project (proposed),2022,578.98,13,841699.43,487.34
 2024,Wollongong Offshore Wind Project (proposed),2023,749.98,17,823569.04,491.66
 2024,Wollongong Offshore Wind Project (proposed),2024,315.89,7,815988.1,489.06
-2024,Shoalhaven Solar Farm ,2019,0.0,0,834238.87,552.42
-2024,Shoalhaven Solar Farm ,2020,74.93,1,803641.83,548.95
-2024,Shoalhaven Solar Farm ,2021,329.01,6,816557.83,549.63
-2024,Shoalhaven Solar Farm ,2022,0.0,0,809974.87,547.37
-2024,Shoalhaven Solar Farm ,2023,2.17,1,830047.29,553.82
-2024,Shoalhaven Solar Farm ,2024,340.23,8,787879.93,544.06
+2024,Broken Hill Solar Farm,2019,231.93,4,667877.2,404.88
+2024,Broken Hill Solar Farm,2020,143.18,3,653062.04,404.37
+2024,Broken Hill Solar Farm,2021,165.95,6,651309.99,400.2
+2024,Broken Hill Solar Farm,2022,91.42,3,628308.48,399.94
+2024,Broken Hill Solar Farm,2023,1319.07,23,651393.32,402.19
+2024,Broken Hill Solar Farm,2024,335.16,11,642761.28,398.87
+2024,Wagga Wagga North Solar Farm,2019,666.26,14,815152.41,516.88
+2024,Wagga Wagga North Solar Farm,2020,1224.69,28,768923.6,503.35
+2024,Wagga Wagga North Solar Farm,2021,1468.68,31,774514.84,504.22
+2024,Wagga Wagga North Solar Farm,2022,792.9,16,746275.33,497.93
+2024,Wagga Wagga North Solar Farm,2023,1290.81,28,782461.31,504.7
+2024,Wagga Wagga North Solar Farm,2024,594.45,15,796472.77,506.77
+2024,Cooma Solar Farm,2019,0.0,0,898767.16,571.85
+2024,Cooma Solar Farm,2020,916.46,18,836159.46,558.33
+2024,Cooma Solar Farm,2021,692.06,11,847087.99,563.53
+2024,Cooma Solar Farm,2022,409.88,8,810971.12,560.07
+2024,Cooma Solar Farm,2023,60.74,1,855257.29,567.85
+2024,Cooma Solar Farm,2024,106.03,5,847658.96,557.88
+2024,N13,2019,130.54,4,959381.69,354.55
+2024,N13,2020,26.34,3,913981.52,351.69
+2024,N13,2021,13.75,2,917347.62,353.18
+2024,N13,2022,88.06,2,881950.13,352.66
+2024,N13,2023,556.48,10,940607.88,353.67
+2024,N13,2024,323.64,9,903694.52,347.93
+2024,Moree Solar Farm,2019,484.42,8,709887.52,344.36
+2024,Moree Solar Farm,2020,1053.39,28,665726.77,337.9
+2024,Moree Solar Farm,2021,925.57,20,668861.07,337.29
+2024,Moree Solar Farm,2022,1974.6,46,656674.97,334.25
+2024,Moree Solar Farm,2023,253.63,7,699001.08,346.0
+2024,Moree Solar Farm,2024,139.66,6,651455.95,336.75
+2024,Snowy Wind,2019,205.73,4,872997.97,448.32
+2024,Snowy Wind,2020,1125.43,28,814721.39,437.55
+2024,Snowy Wind,2021,1862.23,36,819720.08,432.56
+2024,Snowy Wind,2022,1500.66,32,788647.39,431.27
+2024,Snowy Wind,2023,2248.62,36,820716.84,431.85
+2024,Snowy Wind,2024,661.63,14,849582.54,440.93
+2024,N10 Offshore,2019,591.21,10,617067.04,541.82
+2024,N10 Offshore,2020,79.07,1,595195.42,540.45
+2024,N10 Offshore,2021,886.09,13,598718.22,537.25
+2024,N10 Offshore,2022,1236.89,26,592265.5,533.76
+2024,N10 Offshore,2023,260.0,8,615779.96,551.29
+2024,N10 Offshore,2024,209.75,5,583567.99,537.86

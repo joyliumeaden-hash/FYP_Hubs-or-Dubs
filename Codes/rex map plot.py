@@ -15,6 +15,7 @@ import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
 
 loc = pd.read_csv(user_directory + "fyp_location.csv", encoding="latin1")
+loc["Project Name"] = loc["Project Name"].str.strip() 
 
 projects = gpd.GeoDataFrame(
     loc,
@@ -22,9 +23,9 @@ projects = gpd.GeoDataFrame(
     crs="EPSG:4326"
 )
 
+ini_yr = '2020'
 
-
-results = pd.read_csv(result_directory + "Model Result.csv")
+results = pd.read_csv(result_directory + ini_yr + "_Model Result.csv")
 results["Location"] = results["Location"].str.strip()
 
 merged = loc.merge(results[["Location", "Plant Cost ($)"]],
@@ -45,7 +46,7 @@ result.to_csv("projects_matched_to_rez.csv", index=False)
 #print(result)
 aus_map = gpd.read_file(user_directory + "SA2_2026_AUST_SHP_GDA2020/SA2_2026_AUST_GDA2020.shp").to_crs("EPSG:4326")
 states_to_show = ["New South Wales", "Victoria","Queensland","South Australia","Tasmania"]
-rez_totals = matched.groupby("Name")["Plant Cost ($)"].sum().reset_index()
+rez_totals = matched.groupby("Name")["Plant Cost ($)"].mean().reset_index()
 rez_totals = rez_totals.rename(columns={"Name": "REZ_Name"})
 rez_plot = rez.merge(rez_totals, left_on="Name", right_on="REZ_Name", how="left")
 aus_subset = aus_map[aus_map["STE_NAME26"].isin(states_to_show)]
@@ -57,10 +58,32 @@ plot = rez_plot.plot(column="Plant Cost ($)", cmap="OrRd", legend=True,
               edgecolor="black", linewidth=0.5, ax=ax,
               missing_kwds={"color": "lightgrey", "label": "No projects"})
 
+# Find the REZ with the highest and lowest average Plant Cost
+max_row = rez_plot.loc[rez_plot["Plant Cost ($)"].idxmax()]
+min_row = rez_plot.loc[rez_plot["Plant Cost ($)"].idxmin()]
+
+for row, label_prefix in [(max_row, "Highest"), (min_row, "Lowest")]:
+    centroid = row.geometry.centroid
+    ax.annotate(
+        f"{label_prefix}: \n{row['Name']}\n${row['Plant Cost ($)']:,.0f}",
+        xy=(centroid.x, centroid.y),
+        xytext=(-150, -50),  # offset in points, so the label doesn't sit exactly on the dot
+        textcoords="offset points",
+        fontsize=8,
+        fontweight="bold",
+        color="black",
+        bbox=dict(boxstyle="round,pad=0.3", facecolor="white", edgecolor="black", alpha=0.8),
+        arrowprops=dict(arrowstyle="->", color="black", lw=0.8)
+    )
+
+    
+
 cbar = plot.get_figure().axes[-1]
 cbar.yaxis.set_major_formatter(ticker.FuncFormatter(lambda x, pos: f'{x:,.0f}'))
 
 ax.set_axis_off()
-ax.set_title("Total Plant Cost by Renewable Energy Zone In 2019 Using 2019 As Base Year")
-plt.savefig("plant_cost_by_rez.png", dpi=300, bbox_inches="tight")
+title_text = 'Average Plant Cost by Renewable Energy Zone In ' + ini_yr + ' Using ' + ini_yr + ' As Base Year'
+#ax.set_title("Total Plant Cost by Renewable Energy Zone In 2019 Using 2019 As Base Year")
+ax.set_title(title_text)
+plt.savefig(ini_yr + "_plant_cost_by_rez.png", dpi=300, bbox_inches="tight")
 plt.show()

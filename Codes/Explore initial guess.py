@@ -7,8 +7,8 @@ from scipy.optimize import differential_evolution
 directory_main = "C:/Users/joyli//OneDrive/Desktop/FYP/"
 
 # ── Location to test (hardcoded index from fyp_location.csv) ─────────────────
-LOC_INDEX = 4
-BASE_YEAR  = "2019"
+LOC_INDEX = 23 #15 is fitzrot sample data (2023 issue), #23 is banana (2020)
+BASE_YEAR  = "2020"
 
 # ── Demand profile ────────────────────────────────────────────────────────────
 requiredMWh = []
@@ -201,8 +201,8 @@ print(f"\nCost range:   ${df['annualized_cost'].min():,.0f}  to  ${df['annualize
 #print(f"Wind range:   {df['wind_mw'].min()} MW  to  {df['wind_mw'].max()} MW")
 #print(f"Battery range:{df['battery_mw'].min()} MW  to  {df['battery_mw'].max()} MW")
 
-#output_path = directory_main + "single_test/multistart_results_ini" + BASE_YEAR + ".csv"
-#df.to_csv(output_path, index=False)
+output_path = directory_main + "single_test/multistart_results_ini" + BASE_YEAR + ".csv"
+df.to_csv(output_path, index=False)
 #print(f"\nResults saved to: {output_path}")
 
 

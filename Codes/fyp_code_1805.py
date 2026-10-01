@@ -266,7 +266,7 @@ if(True):
         df = pd.DataFrame(model_result, columns = ["Location", "PV Size (MW)", "Wind Size (MW)", 
                                         "Battery Size (MW)", "Annualized Cost ($)", 
                                         "LCOE ($)", "Plant Cost ($)", "Model Year Penalty Cost ($)"])
-        #df.to_csv(directory_main + in_yr + "_Results/" + "Model Result Nelder.csv", index=False) 
+        df.to_csv(directory_main + in_yr + "_Results/" + "Model Result.csv", index=False) 
         
         print("\n\n")
         print(text_val[loc])
