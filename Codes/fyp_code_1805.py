@@ -183,9 +183,9 @@ lon_val = loc_data["Lon"]
 text_val = loc_data["Project Name"]
 state_val = loc_data["State"]
 
-#numLocs = len(lat_val)
-numLocs = 5  #manually input 10 as not all data has been downloaded
-state = "NSW data/"
+numLocs = len(lat_val)
+#numLocs = 5  #manually input 10 as not all data has been downloaded
+#state = "NSW data/"
 
 #Uncomment this for a variable energy requirement profile 
 
@@ -205,7 +205,7 @@ for day in range(365):
 requiredMWh = requiredMWh[11:] + requiredMWh[:11]
 requiredMWh = np.array(requiredMWh)
 
-in_yr = "2019"
+in_yr = "2024"
 
 if(True):
     
@@ -257,7 +257,7 @@ if(True):
         lcoe = annualized_cost/np.sum(requiredMWh)
 
         deficit,d_count,storage,totgen = CalculatePowerDeficit(solarCFs_loop, windCFs_loop, requiredMWh, solarMWs, windMWs, batteryMW)
-        #np.savetxt(directory_main + "Results/" + text_val[loc] + "_deficit_2019.csv",deficit, delimiter = ',')  #saves the initial year deficit result in the Results folder
+        np.savetxt(directory_main + "Results/" + text_val[loc] + "_deficit_2019.csv",deficit, delimiter = ',')  #saves the initial year deficit result in the Results folder
 
         plant_cost = PlantAnnualizedCostFunction(solarMWs, windMWs, batteryMW)
         penalty_cost = np.sum(deficit) * 20000
@@ -376,8 +376,8 @@ if(True):
 
         #deficit_future = np.transpose(deficit_future)
         results_df = pd.DataFrame(all_rows, index=row_labels).T
-        #results_df.to_csv(directory_main + in_yr + "_Results/deficit_" + text_val[loc] + ".csv", index=False)
-        ####np.savetxt(directory_main + in_yr + "_Results/deficit_" + text_val[loc] + ".csv",deficit_future, delimiter = ',') #saves the all 5 future year results in Results folder for each location
+        results_df.to_csv(directory_main + in_yr + "_Results/deficit_" + text_val[loc] + ".csv", index=False)
+        #Don't undo -> np.savetxt(directory_main + in_yr + "_Results/deficit_" + text_val[loc] + ".csv",deficit_future, delimiter = ',') #saves the all 5 future year results in Results folder for each location
     
 
 else:
