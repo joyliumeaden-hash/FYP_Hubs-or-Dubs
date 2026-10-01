@@ -23,12 +23,15 @@ projects = gpd.GeoDataFrame(
     crs="EPSG:4326"
 )
 
-ini_yr = '2020'
+ini_yr = '2024'
 
 results = pd.read_csv(result_directory + ini_yr + "_Model Result.csv")
 results["Location"] = results["Location"].str.strip()
 
-merged = loc.merge(results[["Location", "Plant Cost ($)"]],
+# merged = loc.merge(results[["Location", "Plant Cost ($)"]],
+#                     left_on="Project Name", right_on="Location", how="left")
+
+merged = loc.merge(results[["Location", "LCOE ($)"]],
                     left_on="Project Name", right_on="Location", how="left")
 
 projects = gpd.GeoDataFrame(
@@ -46,7 +49,8 @@ result.to_csv("projects_matched_to_rez.csv", index=False)
 #print(result)
 aus_map = gpd.read_file(user_directory + "SA2_2026_AUST_SHP_GDA2020/SA2_2026_AUST_GDA2020.shp").to_crs("EPSG:4326")
 states_to_show = ["New South Wales", "Victoria","Queensland","South Australia","Tasmania"]
-rez_totals = matched.groupby("Name")["Plant Cost ($)"].mean().reset_index()
+#rez_totals = matched.groupby("Name")["Plant Cost ($)"].mean().reset_index()
+rez_totals = matched.groupby("Name")["LCOE ($)"].mean().reset_index()
 rez_totals = rez_totals.rename(columns={"Name": "REZ_Name"})
 rez_plot = rez.merge(rez_totals, left_on="Name", right_on="REZ_Name", how="left")
 aus_subset = aus_map[aus_map["STE_NAME26"].isin(states_to_show)]
@@ -54,18 +58,23 @@ aus_subset = aus_map[aus_map["STE_NAME26"].isin(states_to_show)]
 fig, ax = plt.subplots(figsize=(10, 12))
 
 aus_subset.plot(ax=ax, color="whitesmoke", edgecolor="grey", linewidth=0.5)
-plot = rez_plot.plot(column="Plant Cost ($)", cmap="OrRd", legend=True,
+#plot = rez_plot.plot(column="Plant Cost ($)", cmap="OrRd", legend=True,
+plot = rez_plot.plot(column="LCOE ($)", cmap="Blues", legend=True,              #OrRd       
               edgecolor="black", linewidth=0.5, ax=ax,
+              legend_kwds={"label": "LCOE ($/MWh)"},
               missing_kwds={"color": "lightgrey", "label": "No projects"})
 
 # Find the REZ with the highest and lowest average Plant Cost
-max_row = rez_plot.loc[rez_plot["Plant Cost ($)"].idxmax()]
-min_row = rez_plot.loc[rez_plot["Plant Cost ($)"].idxmin()]
+#max_row = rez_plot.loc[rez_plot["Plant Cost ($)"].idxmax()]
+#min_row = rez_plot.loc[rez_plot["Plant Cost ($)"].idxmin()]
+max_row = rez_plot.loc[rez_plot["LCOE ($)"].idxmax()]
+min_row = rez_plot.loc[rez_plot["LCOE ($)"].idxmin()]
 
 for row, label_prefix in [(max_row, "Highest"), (min_row, "Lowest")]:
     centroid = row.geometry.centroid
     ax.annotate(
-        f"{label_prefix}: \n{row['Name']}\n${row['Plant Cost ($)']:,.0f}",
+        #f"{label_prefix}: \n{row['Name']}\n${row['Plant Cost ($)']:,.0f}",
+        f"{label_prefix}: \n{row['Name']}\n${row['LCOE ($)']:,.0f}",
         xy=(centroid.x, centroid.y),
         xytext=(-150, -50),  # offset in points, so the label doesn't sit exactly on the dot
         textcoords="offset points",
@@ -82,8 +91,9 @@ cbar = plot.get_figure().axes[-1]
 cbar.yaxis.set_major_formatter(ticker.FuncFormatter(lambda x, pos: f'{x:,.0f}'))
 
 ax.set_axis_off()
-title_text = 'Average Plant Cost by Renewable Energy Zone In ' + ini_yr + ' Using ' + ini_yr + ' As Base Year'
+title_text = 'Average LCOE by Renewable Energy Zone In ' + ini_yr + ' Using ' + ini_yr + ' As Base Year'
 #ax.set_title("Total Plant Cost by Renewable Energy Zone In 2019 Using 2019 As Base Year")
 ax.set_title(title_text)
-plt.savefig(ini_yr + "_plant_cost_by_rez.png", dpi=300, bbox_inches="tight")
+#plt.savefig(ini_yr + "_plant_cost_by_rez.png", dpi=300, bbox_inches="tight")
+plt.savefig(ini_yr + "_lcoe_by_rez.png", dpi=300, bbox_inches="tight")
 plt.show()
