@@ -7,8 +7,8 @@ from scipy.optimize import differential_evolution
 directory_main = "C:/Users/joyli//OneDrive/Desktop/FYP/"
 
 # ── Location to test (hardcoded index from fyp_location.csv) ─────────────────
-LOC_INDEX = 23 #15 is fitzrot sample data (2023 issue), #23 is banana (2020)
-BASE_YEAR  = "2020"
+LOC_INDEX = 1 #15 is fitzrot sample data (2023 issue), #23 is banana (2020)
+BASE_YEAR  = "2021"
 
 # ── Demand profile ────────────────────────────────────────────────────────────
 requiredMWh = []
@@ -136,13 +136,13 @@ def run_optimization(solarCFs, windCFs, requiredMWh, initial_guess_wind, initial
     xinit[numSolar:numSolar+numWind] = initial_guess_wind
     xinit[batteryIndx]            = initial_guess_battery
 
-    #bounds = [[0, None]] * (numSolar + numWind + 1)
-    #res    = minimize(calculateAnnualizedCost, xinit, bounds=bounds)#, method='Nelder-Mead')
+    bounds = [[0, None]] * (numSolar + numWind + 1)
+    res    = minimize(calculateAnnualizedCost, xinit, bounds=bounds)#, method='Nelder-Mead')
 
-    bounds = [(0, 1000)] * (numSolar + numWind + 1)
-    res = differential_evolution(calculateAnnualizedCost, bounds, 
-                              seed=42, maxiter=1000, tol=1e-6,
-                              workers=1, polish=True)
+    #bounds = [(0, 1000)] * (numSolar + numWind + 1)
+    #res = differential_evolution(calculateAnnualizedCost, bounds, 
+                              #seed=42, maxiter=1000, tol=1e-6,
+                              #workers=1, polish=True)
 
     solarMWs  = res.x[solarOffset:solarOffset + numSolar]
     windMWs   = res.x[windOffset:windOffset   + numWind]
@@ -172,9 +172,9 @@ def run_optimization(solarCFs, windCFs, requiredMWh, initial_guess_wind, initial
 
 
 # ── Multi-start exploration ───────────────────────────────────────────────────
-initial_guesses_wind = [200]
-initial_guesses_solar = [200]
-initial_guesses_battery = [200]
+initial_guesses_wind = [100]
+initial_guesses_solar = [100]
+initial_guesses_battery = [100]
 
 print(f"Running multi-start exploration for: {text_val[LOC_INDEX]}")
 print(f"Base year: {BASE_YEAR}\n")
@@ -216,12 +216,12 @@ df.to_csv(output_path, index=False)
 # ── Multi-year robustness section ─────────────────────────────────────────────
 # Hardcode a plant arrangement to test across all years
 # Change these values to whatever arrangement you want to explore
-HARDCODED_SOLAR_MW   = 253.43  # MW
-HARDCODED_WIND_MW    = 72.32   # MW
-HARDCODED_BATTERY_MW = 104.3   # MW
+HARDCODED_SOLAR_MW   = 217.71  # MW
+HARDCODED_WIND_MW    = 75.23   # MW
+HARDCODED_BATTERY_MW = 127.05  # MW
 
 # Years to test
-data_years = [2019, 2020, 2021]#, 2022, 2023, 2024]
+data_years = [2019, 2020, 2021, 2022, 2023, 2024]
  
 print(f"\n\n── Multi-year robustness for hardcoded arrangement ──────────────────")
 print(f"Solar: {HARDCODED_SOLAR_MW} MW | Wind: {HARDCODED_WIND_MW} MW | Battery: {HARDCODED_BATTERY_MW} MW")
@@ -315,12 +315,12 @@ for j, yr in enumerate(data_years):
     print(f"  {yr} | Deficit hours: {d_count:3d} | Total deficit: {np.sum(deficit):8.1f} MWh | LCOE: ${lcoe:.2f}")
  
 # Save hourly data (deficit, generation, storage) per year
-#hourly_df = pd.DataFrame(all_rows, index=row_labels).T
-#hourly_df.to_csv(directory_main + "single_test/multiyear_hourly.csv", index=False)
+hourly_df = pd.DataFrame(all_rows, index=row_labels).T
+hourly_df.to_csv(directory_main + "single_test/multiyear_hourly.csv", index=False)
  
 # Save year summary
 summary_df = pd.DataFrame(year_summary)
-#summary_df.to_csv(directory_main + "single_test/multiyear_summary.csv", index=False)
+summary_df.to_csv(directory_main + "single_test/multiyear_summary.csv", index=False)
  
 print(f"\nHourly data saved to:  single_test/multiyear_hourly.csv")
 print(f"Year summary saved to: single_test/multiyear_summary.csv")
