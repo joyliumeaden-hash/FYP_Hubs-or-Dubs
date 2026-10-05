@@ -7,7 +7,7 @@ from scipy.optimize import differential_evolution
 directory_main = "C:/Users/joyli//OneDrive/Desktop/FYP/"
 
 # ── Location to test (hardcoded index from fyp_location.csv) ─────────────────
-LOC_INDEX = 1 #15 is fitzrot sample data (2023 issue), #23 is banana (2020)
+LOC_INDEX = 35 #15 is fitzrot sample data (2023 issue), #23 is banana (2020)
 BASE_YEAR  = "2021"
 
 # ── Demand profile ────────────────────────────────────────────────────────────
@@ -216,9 +216,9 @@ df.to_csv(output_path, index=False)
 # ── Multi-year robustness section ─────────────────────────────────────────────
 # Hardcode a plant arrangement to test across all years
 # Change these values to whatever arrangement you want to explore
-HARDCODED_SOLAR_MW   = 217.71  # MW
-HARDCODED_WIND_MW    = 75.23   # MW
-HARDCODED_BATTERY_MW = 127.05  # MW
+HARDCODED_SOLAR_MW   = 242.69  # MW
+HARDCODED_WIND_MW    = 32.63 # MW
+HARDCODED_BATTERY_MW = 93.97  # MW
 
 # Years to test
 data_years = [2019, 2020, 2021, 2022, 2023, 2024]
