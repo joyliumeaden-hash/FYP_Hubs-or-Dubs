@@ -23,7 +23,7 @@ projects = gpd.GeoDataFrame(
     crs="EPSG:4326"
 )
 
-ini_yr = '2024'
+ini_yr = '2019'
 
 results = pd.read_csv(result_directory + ini_yr + "_Model Result.csv")
 results["Location"] = results["Location"].str.strip()
@@ -74,7 +74,7 @@ for row, label_prefix in [(max_row, "Highest"), (min_row, "Lowest")]:
     centroid = row.geometry.centroid
     ax.annotate(
         #f"{label_prefix}: \n{row['Name']}\n${row['Plant Cost ($)']:,.0f}",
-        f"{label_prefix}: \n{row['Name']}\n${row['LCOE ($)']:,.0f}",
+        f"{label_prefix}: \n{row['Name']}\n${row['LCOE ($)']:,.0f}/MWh",
         xy=(centroid.x, centroid.y),
         xytext=(-150, -50),  # offset in points, so the label doesn't sit exactly on the dot
         textcoords="offset points",
