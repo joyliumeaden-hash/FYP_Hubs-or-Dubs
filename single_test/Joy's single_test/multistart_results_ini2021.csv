@@ -1,0 +1,2 @@
+ini_solar,ini_wind,ini_battery,solar_mw,wind_mw,battery_mw,annualized_cost,plant_cost,penalty_cost,lcoe,deficit_hours,converged,message
+100,100,100,457.21,31.93,131.52,123990494.43,102248009.26,21742485.17,399.65,22,True,CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH
