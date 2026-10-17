@@ -23,7 +23,7 @@ projects = gpd.GeoDataFrame(
     crs="EPSG:4326"
 )
 
-ini_yr = '2024'
+ini_yr = '2019'
 
 results = pd.read_csv(result_directory + ini_yr + "_Model Result.csv")
 results["Location"] = results["Location"].str.strip()
@@ -59,13 +59,15 @@ rez_totals = rez_totals.rename(columns={"Name": "REZ_Name"})
 rez_plot = rez.merge(rez_totals, left_on="Name", right_on="REZ_Name", how="left")
 aus_subset = aus_map[aus_map["STE_NAME26"].isin(states_to_show)]
 
-fig, ax = plt.subplots(figsize=(10, 12))
+fig, ax = plt.subplots(figsize=(9, 12))
 
 aus_subset.plot(ax=ax, color="whitesmoke", edgecolor="grey", linewidth=0.5)
 #plot = rez_plot.plot(column="Plant Cost ($)", cmap="OrRd", legend=True,
-plot = rez_plot.plot(column="Deficit Hours (hr)", cmap="copper_r", legend=True,              #OrRd       
+plot = rez_plot.plot(column="Deficit Hours (hr)", cmap="copper_r", legend=True,
+#plot = rez_plot.plot(column="LCOE ($)", cmap="Blues", legend=True,                    
               edgecolor="black", linewidth=0.5, ax=ax,
-              legend_kwds={"label": "Deficit Hours (hr)"},
+              legend_kwds={"label": "Deficit Hours (hr)", "shrink":0.75, "pad": -0.07},
+              #legend_kwds={"label": "LCOE ($/MWh)", "shrink":0.75, "pad": -0.07},
               missing_kwds={"color": "lightgrey", "label": "No projects"})
 
 # Find the REZ with the highest and lowest average Plant Cost
@@ -76,15 +78,22 @@ plot = rez_plot.plot(column="Deficit Hours (hr)", cmap="copper_r", legend=True, 
 max_row = rez_plot.loc[rez_plot["Deficit Hours (hr)"].idxmax()]
 min_row = rez_plot.loc[rez_plot["Deficit Hours (hr)"].idxmin()]
 
+label_locations = {
+    "Highest": {"xytext": (-150, -100), "ha": "right"},
+    "Lowest":  {"xytext": (-140, -100),  "ha": "right"},
+}
+
 for row, label_prefix in [(max_row, "Highest"), (min_row, "Lowest")]:
     centroid = row.geometry.centroid
+    pos = label_locations[label_prefix]
     ax.annotate(
         #f"{label_prefix}: \n{row['Name']}\n${row['Plant Cost ($)']:,.0f}",
         f"{label_prefix}: \n{row['Name']}\n{row['Deficit Hours (hr)']:,.0f} hrs",
+        #f"{label_prefix}: \n{row['Name']}\n{row['LCOE ($)']:,.0f} hrs",
         xy=(centroid.x, centroid.y),
-        xytext=(-150, -50),  # offset in points, so the label doesn't sit exactly on the dot
+        xytext=pos["xytext"],  # offset in points, so the label doesn't sit exactly on the dot
         textcoords="offset points",
-        fontsize=8,
+        fontsize=11,
         fontweight="bold",
         color="black",
         bbox=dict(boxstyle="round,pad=0.3", facecolor="white", edgecolor="black", alpha=0.8),
@@ -98,9 +107,9 @@ cbar.yaxis.set_major_formatter(ticker.FuncFormatter(lambda x, pos: f'{x:,.0f}'))
 
 ax.set_axis_off()
 #title_text = 'Average LCOE by Renewable Energy Zone In ' + ini_yr + ' Using ' + ini_yr + ' As Base Year'
-title_text = 'Average Deficit Hours by Renewable Energy Zone In ' + ini_yr + ' Using ' + ini_yr + ' As Base Year'
+#title_text = 'Average Deficit Hours by Renewable Energy Zone In ' + ini_yr + ' Using ' + ini_yr + ' As Base Year'
 #ax.set_title("Total Plant Cost by Renewable Energy Zone In 2019 Using 2019 As Base Year")
-ax.set_title(title_text)
+#ax.set_title(title_text)
 #plt.savefig(ini_yr + "_plant_cost_by_rez.png", dpi=300, bbox_inches="tight")
 #plt.savefig(ini_yr + "_lcoe_by_rez.png", dpi=300, bbox_inches="tight")
 plt.savefig(ini_yr + "_deficit_by_rez.png", dpi=300, bbox_inches="tight")
